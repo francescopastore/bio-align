@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+![CI/CD](https://github.com/francesco-pastore/bio-align/Deployment
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
