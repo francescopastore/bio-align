@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-![CI/CD](https://github.com/francesco-pastore/bio-align/Deployment
+[![Deployment](https://github.com/francescopastore/bio-align/actions/workflows/deploy.yml/badge.svg)](https://github.com/francescopastore/bio-align/actions/workflows/deploy.yml)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
