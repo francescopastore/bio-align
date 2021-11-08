@@ -1,8 +1,8 @@
 import React from 'react'
-import BasicCard from './components/BasicCard.js'
+import AppForm from './components/AppForm.js'
 
 function App() {
-    return <BasicCard></BasicCard>
+    return <AppForm></AppForm>
 }
 
 export default App
