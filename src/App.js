@@ -1,9 +1,8 @@
-import React from 'react';
+import React from 'react'
 import BasicCard from './components/BasicCard.js'
 
 function App() {
-  return <BasicCard></BasicCard>;
+    return <BasicCard></BasicCard>
 }
 
-
-export default App;
+export default App
