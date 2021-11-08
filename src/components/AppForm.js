@@ -1,11 +1,13 @@
 import * as React from 'react'
+import AppHeader from './AppHeader'
 import AppCard from './AppCard'
+import FormSelectAlgorithm from './FormSelectAlgorithm'
 
 export default function AppForm() {
   return (
     <div style={appForm}>
-      <AppCard>Test</AppCard>
-      <AppCard>Test</AppCard>
+      <AppHeader></AppHeader>
+      <FormSelectAlgorithm>Test</FormSelectAlgorithm>
       <AppCard>Test</AppCard>
       <AppCard>Test</AppCard>
     </div>
@@ -14,6 +16,6 @@ export default function AppForm() {
 
 const appForm = {
   position: 'absolute',
-  top: '30vh',
+  top: '10vh',
   left: '10vw',
 }
