@@ -25,5 +25,5 @@ export default function AppForm() {
 const appForm = {
   position: 'absolute',
   top: '10vh',
-  left: '10vw',
+  left: '5vw',
 }
