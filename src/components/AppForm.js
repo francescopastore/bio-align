@@ -4,6 +4,7 @@ import AppHeader from './AppHeader'
 import AppCard from './AppCard'
 import FormSelectAlgorithm from './FormSelectAlgorithm'
 import FormInputWord from './FormInputWord'
+import FormInputNumber from './FormInputNumber'
 
 export default function AppForm() {
   return (
@@ -13,6 +14,9 @@ export default function AppForm() {
         <FormSelectAlgorithm></FormSelectAlgorithm>
         <FormInputWord></FormInputWord>
         <FormInputWord></FormInputWord>
+        <FormInputNumber></FormInputNumber>
+        <FormInputNumber></FormInputNumber>
+        <FormInputNumber></FormInputNumber>
       </AppCard>
     </div>
   )
