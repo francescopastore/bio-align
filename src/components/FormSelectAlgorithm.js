@@ -7,8 +7,6 @@ import InputAdornment from '@mui/material/InputAdornment'
 
 import FunctionsIcon from '@mui/icons-material/Functions'
 
-import AppCard from './AppCard'
-
 export default function FormSelectAlgorithm(props) {
   const [algorithm, setAlgorithm] = React.useState('edit')
 
@@ -17,27 +15,25 @@ export default function FormSelectAlgorithm(props) {
   }
 
   return (
-    <AppCard>
-      <FormControl fullWidth>
-        <InputLabel id="algorithm-label">Algorithm</InputLabel>
-        <Select
-          labelId="algorithm-label"
-          id="algorithm"
-          label="Algorithm"
-          value={algorithm}
-          onChange={handleChange}
-          startAdornment={
-            <InputAdornment position="start">
-              <FunctionsIcon />
-            </InputAdornment>
-          }
-        >
-          <MenuItem value="edit">Edit Distance</MenuItem>
-          <MenuItem value="lcs">Longest common subsequence</MenuItem>
-          <MenuItem value="nw">Needleman–Wunsch</MenuItem>
-          <MenuItem value="sw">Smith–Waterman</MenuItem>
-        </Select>
-      </FormControl>
-    </AppCard>
+    <FormControl fullWidth margin="normal">
+      <InputLabel id="algorithm-label">Algorithm</InputLabel>
+      <Select
+        labelId="algorithm-label"
+        id="algorithm"
+        label="Algorithm"
+        value={algorithm}
+        onChange={handleChange}
+        startAdornment={
+          <InputAdornment position="start">
+            <FunctionsIcon />
+          </InputAdornment>
+        }
+      >
+        <MenuItem value="edit">Edit Distance</MenuItem>
+        <MenuItem value="lcs">Longest common subsequence</MenuItem>
+        <MenuItem value="nw">Needleman–Wunsch</MenuItem>
+        <MenuItem value="sw">Smith–Waterman</MenuItem>
+      </Select>
+    </FormControl>
   )
 }
