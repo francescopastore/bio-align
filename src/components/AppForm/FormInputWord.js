@@ -4,6 +4,9 @@ import InputAdornment from '@mui/material/InputAdornment'
 import FormControl from '@mui/material/FormControl'
 import EditIcon from '@mui/icons-material/Edit'
 
+/*
+props: label, defaultValue, handleChange
+*/
 export default function FormInputWord(props) {
   const [value, setValue] = React.useState(props.defaultValue)
   const handleChange = (e) => {
@@ -23,6 +26,7 @@ export default function FormInputWord(props) {
         error={isError()}
         variant="outlined"
         helperText={isError() ? 'Max 20 alphabetic characters' : ''}
+        data-testid="value-input"
         InputProps={{
           startAdornment: (
             <InputAdornment position="start">
