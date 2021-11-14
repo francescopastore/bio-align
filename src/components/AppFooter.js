@@ -18,10 +18,11 @@ export default function AppForm() {
       React.js
     </Link>
   )
+  // using link to avoid bad p nesting
   const heart = (
-    <Typography display="inline" color="red">
+    <Link underline="none" display="inline" color="red">
       ♥
-    </Typography>
+    </Link>
   )
 
   return (
