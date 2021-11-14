@@ -2,7 +2,6 @@ import * as React from 'react'
 import Paper from '@mui/material/Card'
 
 import AppHeader from './AppHeader'
-import AppCard from './AppCard'
 import FormSelectAlgorithm from './FormSelectAlgorithm'
 import FormInputWord from './FormInputWord'
 import FormInputNumber from './FormInputNumber'
