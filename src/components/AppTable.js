@@ -4,13 +4,13 @@ import Box from '@mui/material/Box'
 import AppTableCard from './AppTableCard'
 
 const data = [
-  [1, 2, 3, 4, 2, 3, 4],
-  [1, 2, 3, 4, 2, 3, 4],
-  [1, 2, 3, 4, 2, 3, 4],
-  [1, 2, 3, 4, 2, 3, 4],
-  [1, 2, 3, 4, 2, 3, 4],
-  [1, 2, 3, 4, 2, 3, 4],
-  [1, 2, 3, 4, 2, 3, 4],
+  ['', 'A', 'B', 'C', 'D', 'E', 'F'],
+  ['A', 2, 3, 4, 2, 3, 4],
+  ['A', 2, 3, 4, 2, 3, 4],
+  ['A', 2, 3, 4, 2, 3, 4],
+  ['A', 2, 3, 4, 2, 3, 4],
+  ['A', 2, 3, 4, 2, 3, 4],
+  ['A', 2, 3, 4, 2, 3, 4],
 ]
 
 export default function AppTable(props) {
@@ -26,6 +26,14 @@ function generateTable(data) {
     let baseIndex = rowIndex * data[0].length
 
     row.forEach((col, colIndex) => {
+      if (col === '') {
+        tableRow.push(
+          <div style={{ visibility: 'hidden' }}>
+            <AppTableCard key={baseIndex + colIndex}></AppTableCard>
+          </div>
+        )
+        return
+      }
       tableRow.push(
         <AppTableCard key={baseIndex + colIndex}>{col}</AppTableCard>
       )
