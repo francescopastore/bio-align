@@ -20,7 +20,24 @@ it('renders correctly', () => {
   expect(tree).toMatchSnapshot()
 })
 
-it('should handle inputs', () => {
+test('default value param', () => {
+  render(
+    <FormInputWord
+      defaultValue={fakeDefaultValue}
+      label={fakeLabel}
+      handleChange={fakeHandleChange}
+    ></FormInputWord>
+  )
+
+  const input = screen.getByTestId('value-input').querySelector('input')
+  expect(input).toHaveValue(fakeDefaultValue)
+})
+
+test('handle change param', () => {
+  const newValue = 'TEST'
+  const fakeHandleChange = (value) => {
+    expect(value).toBe(newValue)
+  }
   render(
     <FormInputWord
       defaultValue={fakeDefaultValue}
@@ -32,7 +49,6 @@ it('should handle inputs', () => {
   const input = screen.getByTestId('value-input').querySelector('input')
   expect(input).toBeInTheDocument()
 
-  const newValue = 'TEST'
   fireEvent.change(input, { target: { value: newValue } })
   expect(input).toHaveValue(newValue)
 })

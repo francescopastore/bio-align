@@ -5,8 +5,8 @@ import FormControl from '@mui/material/FormControl'
 import EditIcon from '@mui/icons-material/Edit'
 
 /*
-props: label, defaultValue, handleChange
-*/
+ * props: label, defaultValue, handleChange
+ */
 export default function FormInputWord(props) {
   const [value, setValue] = React.useState(props.defaultValue)
   const handleChange = (e) => {
