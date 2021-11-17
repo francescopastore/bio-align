@@ -4,13 +4,19 @@ import Box from '@mui/material/Box'
 import AppTableCard from './AppTableCard'
 
 const data = [
-  ['', 'A', 'B', 'C', 'D', 'E', 'F'],
-  ['A', 2, 3, 4, 2, 3, 4],
-  ['A', 2, 3, 4, 2, 3, 4],
-  ['A', 2, 3, 4, 2, 3, 4],
-  ['A', 2, 3, 4, 2, 3, 4],
-  ['A', 2, 3, 4, 2, 3, 4],
-  ['A', 2, 3, 4, 2, 3, 4],
+  [
+    { value: '' },
+    { value: 'A' },
+    { value: 'B' },
+    { value: 'C' },
+    { value: 'D' },
+  ],
+  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
+  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
+  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
+  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
+  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
+  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
 ]
 
 export default function AppTable(props) {
@@ -23,23 +29,23 @@ function generateTable(data) {
   let table = []
   data.forEach((row, rowIndex) => {
     let tableRow = []
-    let baseIndex = rowIndex * data[0].length
 
     row.forEach((col, colIndex) => {
-      if (col === '') {
-        tableRow.push(
-          <div style={{ visibility: 'hidden' }}>
-            <AppTableCard key={baseIndex + colIndex}></AppTableCard>
-          </div>
-        )
-        return
-      }
+      const cell = <AppTableCard>{col}</AppTableCard>
+      const visibility = colIndex === 0 && rowIndex === 0 ? 'hidden' : 'visible'
+      // hide first cell
       tableRow.push(
-        <AppTableCard key={baseIndex + colIndex}>{col}</AppTableCard>
+        <Box key={colIndex} style={{ visibility: visibility }}>
+          {cell}
+        </Box>
       )
     })
 
-    table.push(<Box sx={style.row}>{tableRow}</Box>)
+    table.push(
+      <Box key={rowIndex} sx={style.row}>
+        {tableRow}
+      </Box>
+    )
   })
   return table
 }
