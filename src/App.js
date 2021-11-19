@@ -10,10 +10,12 @@ import AppFooter from './components/AppFooter.js'
 function App() {
   return (
     <>
-      <Box sx={style.leftContainer}>
+      <Box sx={style.headerContainer}>
         <Box sx={style.inner}>
           <AppHeader></AppHeader>
         </Box>
+      </Box>
+      <Box sx={style.leftContainer}>
         <AppForm></AppForm>
       </Box>
       <Box sx={style.rightContainer}>
@@ -25,9 +27,16 @@ function App() {
 }
 
 const style = {
-  leftContainer: {
+  headerContainer: {
     position: 'absolute',
     top: '10vh',
+    left: '8.5vw',
+    width: '18vw',
+    height: '10vh',
+  },
+  leftContainer: {
+    position: 'absolute',
+    top: '25vh',
     left: '5vw',
     width: '25vw',
   },
@@ -35,7 +44,7 @@ const style = {
     position: 'absolute',
     top: '10vh',
     left: '35vw',
-    width: '65vw',
+    width: '60vw',
   },
   inner: {
     mb: 3,

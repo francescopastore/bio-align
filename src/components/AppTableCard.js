@@ -4,10 +4,10 @@ import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
-import { lime, grey } from '@mui/material/colors'
+import { yellow, grey } from '@mui/material/colors'
 
 export default function AppTableCard(props) {
-  const value = parseFloat(props.children.value)
+  const value = parseInt(props.children.value)
   style.paper.backgroundColor = generateColor(value)
   return (
     <Paper sx={style.paper}>
@@ -22,7 +22,7 @@ function generateColor(value) {
   if (isNaN(value)) {
     return grey['A100']
   } else {
-    return lime['A200']
+    return yellow['A200']
   }
 }
 
@@ -38,7 +38,7 @@ function generateNumberCard(value) {
       <ArrowUpwardIcon sx={{ transform: 'rotate(-45deg)' }}></ArrowUpwardIcon>
       <ArrowUpwardIcon></ArrowUpwardIcon>
       <ArrowBackIcon></ArrowBackIcon>
-      <Typography>{value}</Typography>
+      <Typography variant="h6">{value}</Typography>
     </Box>
   )
 }

@@ -8,14 +8,21 @@ import LooksOneIcon from '@mui/icons-material/LooksOne'
  */
 export default function FormInputNumber(props) {
   const [value, setValue] = React.useState(props.defaultValue)
+
   const handleChange = (e) => {
-    const value = e.target.value.toUpperCase()
-    setValue(value)
+    const value = parseInt(e.target.value)
+    if (isNaN(value)) {
+      setValue(0)
+    } else {
+      setValue(value)
+    }
     props.handleChange(value)
   }
+
   const isError = () => {
-    return value.length > 20
+    return isNaN(parseInt(value)) || value < -10 || value > 10
   }
+
   return (
     <FormControl margin="normal" sx={props.style}>
       <TextField
@@ -24,7 +31,7 @@ export default function FormInputNumber(props) {
         value={value}
         error={isError()}
         variant="outlined"
-        helperText={isError() ? 'Max 20 alphabetic characters' : ''}
+        helperText={isError()}
         data-testid="value-input"
         InputProps={{
           startAdornment: (

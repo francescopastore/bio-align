@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
 
 import AppContainer from './AppContainer'
 
@@ -40,6 +41,9 @@ export default function AppForm() {
           handleChange={handleSecondWord}
         ></FormInputNumber>
       </Box>
+      <Typography variant="caption">
+        Only numbers between -10 and 10 are allowed
+      </Typography>
     </AppContainer>
   )
 }
