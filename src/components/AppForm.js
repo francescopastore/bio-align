@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Box from '@mui/material/Box'
 
 import AppContainer from './AppContainer'
 
@@ -20,9 +21,25 @@ export default function AppForm() {
         defaultValue="ATATGTC"
         handleChange={handleSecondWord}
       ></FormInputWord>
-      <FormInputNumber></FormInputNumber>
-      <FormInputNumber></FormInputNumber>
-      <FormInputNumber></FormInputNumber>
+      <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
+        <FormInputNumber
+          label="Match"
+          defaultValue="-2"
+          handleChange={handleSecondWord}
+          style={{ mr: 2 }}
+        ></FormInputNumber>
+        <FormInputNumber
+          label="Mismatch"
+          defaultValue="1"
+          handleChange={handleSecondWord}
+          style={{ mr: 2 }}
+        ></FormInputNumber>
+        <FormInputNumber
+          label="Gap"
+          defaultValue="-1"
+          handleChange={handleSecondWord}
+        ></FormInputNumber>
+      </Box>
     </AppContainer>
   )
 }

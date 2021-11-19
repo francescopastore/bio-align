@@ -29,12 +29,12 @@ const style = {
     position: 'absolute',
     top: '10vh',
     left: '5vw',
-    width: '20vw',
+    width: '25vw',
   },
   rightContainer: {
     position: 'absolute',
     top: '10vh',
-    left: '30vw',
+    left: '35vw',
     width: '65vw',
   },
   inner: {
