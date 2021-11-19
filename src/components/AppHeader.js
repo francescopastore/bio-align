@@ -1,40 +1,22 @@
 import * as React from 'react'
 
-import Box from '@mui/material/Box'
-import Avatar from '@mui/material/Avatar'
-import Typography from '@mui/material/Typography'
+import Paper from '@mui/material/Paper'
 
-import AppContainer from './AppContainer'
-
-export default function AppHeader() {
+export default function AppHeader(props) {
   return (
-    <AppContainer>
-      <Box sx={style.container}>
-        <Avatar
-          sx={style.logo}
-          src={process.env.PUBLIC_URL + '/icon.png'}
-          alt="app icon"
-        />
-        <Typography sx={style.title} variant="h3" component="h1">
-          BioAlign
-        </Typography>
-      </Box>
-    </AppContainer>
+    <Paper
+      sx={{ p: 1, width: props.width, height: props.height }}
+      elevation={4}
+    >
+      <img
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+        }}
+        src={process.env.PUBLIC_URL + '/header.png'}
+        alt="header"
+      />
+    </Paper>
   )
-}
-
-const height = '80px'
-
-const style = {
-  container: {
-    display: 'flex',
-    flexDirection: 'row',
-  },
-  logo: {
-    width: height,
-    height: height,
-  },
-  title: {
-    lineHeight: height,
-  },
 }

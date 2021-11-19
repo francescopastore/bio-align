@@ -12,7 +12,10 @@ function App() {
     <>
       <Box sx={style.headerContainer}>
         <Box sx={style.inner}>
-          <AppHeader></AppHeader>
+          <AppHeader
+            width={style.headerContainer.width}
+            height={style.headerContainer.height}
+          ></AppHeader>
         </Box>
       </Box>
       <Box sx={style.leftContainer}>
