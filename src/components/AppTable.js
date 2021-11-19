@@ -54,6 +54,5 @@ const style = {
   container: {},
   row: {
     display: 'flex',
-    mb: 3,
   },
 }
