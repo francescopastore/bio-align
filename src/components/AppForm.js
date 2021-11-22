@@ -2,7 +2,7 @@ import * as React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
-import AppContainer from './AppContainer'
+import Paper from '@mui/material/Paper'
 
 import FormSelectAlgorithm from './AppForm/FormSelectAlgorithm'
 import FormInputWord from './AppForm/FormInputWord'
@@ -10,7 +10,7 @@ import FormInputNumber from './AppForm/FormInputNumber'
 
 export default function AppForm() {
   return (
-    <AppContainer>
+    <Paper sx={style.container} elevation={4}>
       <FormSelectAlgorithm></FormSelectAlgorithm>
       <FormInputWord
         label="First word"
@@ -44,7 +44,7 @@ export default function AppForm() {
       <Typography variant="caption">
         Only numbers between -10 and 10 are allowed
       </Typography>
-    </AppContainer>
+    </Paper>
   )
 }
 
@@ -54,4 +54,10 @@ function handleFirstWord(value) {
 
 function handleSecondWord(value) {
   console.log(value)
+}
+
+const style = {
+  container: {
+    p: 3,
+  },
 }

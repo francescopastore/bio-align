@@ -2,10 +2,9 @@ import * as React from 'react'
 
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import Paper from '@mui/material/Paper'
 import Link from '@mui/material/Link'
 import GitHubIcon from '@mui/icons-material/GitHub'
-
-import AppContainer from './AppContainer'
 
 export default function AppForm() {
   const muiLink = (
@@ -26,7 +25,7 @@ export default function AppForm() {
   )
 
   return (
-    <AppContainer style={style.container}>
+    <Paper sx={style.container} elevation={4}>
       <Box sx={style.inner}>
         <Box></Box>
         <Box sx={style.center}>
@@ -38,7 +37,7 @@ export default function AppForm() {
           <GitHubIcon sx={style.icon} fontSize="large" onClick={openGithub} />
         </Box>
       </Box>
-    </AppContainer>
+    </Paper>
   )
 }
 
@@ -53,6 +52,7 @@ const style = {
     left: '5vw',
     width: '90vw',
     height: '5vh',
+    p: 3,
   },
   inner: {
     display: 'grid',
