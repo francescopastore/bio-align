@@ -64,7 +64,7 @@ export default function AppForm() {
         ></FormInputNumber>
       </Box>
       <Typography variant="caption">
-        Only numbers between -10 and 10 are allowed
+        Only weights between -10 and 10 are allowed
       </Typography>
     </Paper>
   )
