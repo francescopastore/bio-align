@@ -26,17 +26,12 @@ export default function AppForm() {
       <FormSelectAlgorithm
         options={logic.algorithms}
         default={0}
-        handle={(v) => {
-          data.algorithm = logic.algorithms[v]
-        }}
+        handle={(v) => (data.algorithm = logic.algorithms[v])}
       ></FormSelectAlgorithm>
       <FormInputWord
         label="First word"
         default={data.firstWord}
-        handle={(v) => {
-          data.firstWord = v
-          console.log(data)
-        }}
+        handle={(v) => (data.firstWord = v)}
       ></FormInputWord>
       <FormInputWord
         label="Second word"

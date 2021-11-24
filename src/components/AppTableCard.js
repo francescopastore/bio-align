@@ -35,9 +35,11 @@ function generateNumberCard(value) {
     <Box
       sx={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}
     >
-      <ArrowUpwardIcon sx={{ transform: 'rotate(-45deg)' }}></ArrowUpwardIcon>
-      <ArrowUpwardIcon></ArrowUpwardIcon>
-      <ArrowBackIcon></ArrowBackIcon>
+      <ArrowUpwardIcon
+        sx={{ transform: 'rotate(-45deg)', fontSize: 24 }}
+      ></ArrowUpwardIcon>
+      <ArrowUpwardIcon sx={{ fontSize: 24 }}></ArrowUpwardIcon>
+      <ArrowBackIcon sx={{ fontSize: 24 }}></ArrowBackIcon>
       <Typography variant="h6">{value}</Typography>
     </Box>
   )
