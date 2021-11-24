@@ -12,9 +12,10 @@ export default function FormSelectAlgorithm(props) {
 
   const handle = (event) => {
     setAlgorithm(event.target.value)
+    props.handle(event.target.value)
   }
 
-  const options = props.options.map((i, v) => {
+  const options = props.options.map((v, i) => {
     return (
       <MenuItem key={i} value={i}>
         {v.label}

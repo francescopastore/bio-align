@@ -25,10 +25,9 @@ export default function AppForm() {
     <Paper sx={style.container} elevation={4}>
       <FormSelectAlgorithm
         options={logic.algorithms}
-        default={data.algorithm}
+        default={0}
         handle={(v) => {
-          data.algorithm = v
-          console.log(data)
+          data.algorithm = logic.algorithms[v]
         }}
       ></FormSelectAlgorithm>
       <FormInputWord
