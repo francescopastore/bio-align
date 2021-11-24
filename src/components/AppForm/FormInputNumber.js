@@ -3,20 +3,21 @@ import TextField from '@mui/material/TextField'
 import FormControl from '@mui/material/FormControl'
 import InputAdornment from '@mui/material/InputAdornment'
 import LooksOneIcon from '@mui/icons-material/LooksOne'
+
 /*
  * props: label, defaultValue, handleChange
  */
 export default function FormInputNumber(props) {
-  const [value, setValue] = React.useState(props.defaultValue)
+  const [value, setValue] = React.useState(props.default)
 
-  const handleChange = (e) => {
+  const handle = (e) => {
     const value = parseInt(e.target.value)
     if (isNaN(value)) {
       setValue(0)
     } else {
       setValue(value)
     }
-    props.handleChange(value)
+    props.handle(value)
   }
 
   const isError = () => {
@@ -26,7 +27,7 @@ export default function FormInputNumber(props) {
   return (
     <FormControl margin="normal" sx={props.style}>
       <TextField
-        onChange={handleChange}
+        onChange={handle}
         label={props.label}
         value={value}
         error={isError()}

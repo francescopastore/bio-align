@@ -8,11 +8,11 @@ import EditIcon from '@mui/icons-material/Edit'
  * props: label, defaultValue, handleChange
  */
 export default function FormInputWord(props) {
-  const [value, setValue] = React.useState(props.defaultValue)
-  const handleChange = (e) => {
+  const [value, setValue] = React.useState(props.default)
+  const handle = (e) => {
     const value = e.target.value.toUpperCase()
     setValue(value)
-    props.handleChange(value)
+    props.handle(value)
   }
   const isError = () => {
     return value.length > 20
@@ -20,7 +20,7 @@ export default function FormInputWord(props) {
   return (
     <FormControl fullWidth margin="normal">
       <TextField
-        onChange={handleChange}
+        onChange={handle}
         label={props.label}
         value={value}
         error={isError()}

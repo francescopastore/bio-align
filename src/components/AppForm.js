@@ -8,37 +8,59 @@ import FormSelectAlgorithm from './AppForm/FormSelectAlgorithm'
 import FormInputWord from './AppForm/FormInputWord'
 import FormInputNumber from './AppForm/FormInputNumber'
 
+import logic from '../logic'
+
+// change here default values
+const data = {
+  algorithm: logic.algorithms[0],
+  firstWord: 'ATTACTC',
+  secondWord: 'ATATGTC',
+  matchWeight: 1,
+  mismatchWeight: 2,
+  gapWeight: 0,
+}
+
 export default function AppForm() {
   return (
     <Paper sx={style.container} elevation={4}>
-      <FormSelectAlgorithm></FormSelectAlgorithm>
+      <FormSelectAlgorithm
+        options={logic.algorithms}
+        default={data.algorithm}
+        handle={(v) => {
+          data.algorithm = v
+          console.log(data)
+        }}
+      ></FormSelectAlgorithm>
       <FormInputWord
         label="First word"
-        defaultValue="ATTACTC"
-        handleChange={handleFirstWord}
+        default={data.firstWord}
+        handle={(v) => {
+          data.firstWord = v
+          console.log(data)
+        }}
       ></FormInputWord>
       <FormInputWord
         label="Second word"
-        defaultValue="ATATGTC"
-        handleChange={handleSecondWord}
+        default={data.secondWord}
+        handle={(v) => (data.secondWord = v)}
       ></FormInputWord>
       <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
         <FormInputNumber
           label="Match"
-          defaultValue="-2"
-          handleChange={handleSecondWord}
+          default={data.matchWeight}
+          handle={(v) => (data.matchWeight = v)}
           style={{ mr: 2 }}
         ></FormInputNumber>
         <FormInputNumber
           label="Mismatch"
-          defaultValue="1"
-          handleChange={handleSecondWord}
+          default={data.mismatchWeight}
+          handle={(v) => (data.mismatchWeight = v)}
           style={{ mr: 2 }}
         ></FormInputNumber>
         <FormInputNumber
           label="Gap"
-          defaultValue="-1"
-          handleChange={handleSecondWord}
+          default={data.gapWeight}
+          handle={(v) => (data.gapWeight = v)}
         ></FormInputNumber>
       </Box>
       <Typography variant="caption">
@@ -46,14 +68,6 @@ export default function AppForm() {
       </Typography>
     </Paper>
   )
-}
-
-function handleFirstWord(value) {
-  console.log(value)
-}
-
-function handleSecondWord(value) {
-  console.log(value)
 }
 
 const style = {

@@ -8,11 +8,19 @@ import InputAdornment from '@mui/material/InputAdornment'
 import FunctionsIcon from '@mui/icons-material/Functions'
 
 export default function FormSelectAlgorithm(props) {
-  const [algorithm, setAlgorithm] = React.useState('edit')
+  const [algorithm, setAlgorithm] = React.useState(props.default)
 
-  const handleChange = (event) => {
+  const handle = (event) => {
     setAlgorithm(event.target.value)
   }
+
+  const options = props.options.map((i, v) => {
+    return (
+      <MenuItem key={i} value={i}>
+        {v.label}
+      </MenuItem>
+    )
+  })
 
   return (
     <FormControl fullWidth margin="normal">
@@ -22,17 +30,14 @@ export default function FormSelectAlgorithm(props) {
         id="algorithm"
         label="Algorithm"
         value={algorithm}
-        onChange={handleChange}
+        onChange={handle}
         startAdornment={
           <InputAdornment position="start">
             <FunctionsIcon />
           </InputAdornment>
         }
       >
-        <MenuItem value="edit">Edit Distance</MenuItem>
-        <MenuItem value="lcs">Longest common subsequence</MenuItem>
-        <MenuItem value="nw">Needleman–Wunsch</MenuItem>
-        <MenuItem value="sw">Smith–Waterman</MenuItem>
+        {options}
       </Select>
     </FormControl>
   )
