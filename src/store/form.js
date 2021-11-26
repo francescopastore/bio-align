@@ -1,9 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-import logic from '../logic'
-
 const initialState = {
-  algorithm: logic.algorithms[0],
+  algorithm: 0,
   firstString: 'ATTACTC',
   secondString: 'ATATGTC',
   matchWeight: 1,
@@ -16,7 +14,7 @@ export const form = createSlice({
   initialState,
   reducers: {
     setAlgorithm: (state, action) => {
-      state.algorithm = logic.algorithms[action.payload]
+      state.algorithm = action.payload
     },
     setFirstString: (state, action) => {
       state.firstWord = action.payload

@@ -17,7 +17,9 @@ export default function FormInputNumber(props) {
     } else {
       setValue(value)
     }
-    props.handle(value)
+    if (!isError()) {
+      props.handle(value)
+    }
   }
 
   const isError = () => {
@@ -31,8 +33,8 @@ export default function FormInputNumber(props) {
         label={props.label}
         value={value}
         error={isError()}
+        helperText={isError() ? '' : ''}
         variant="outlined"
-        helperText={isError()}
         data-testid="value-input"
         InputProps={{
           startAdornment: (

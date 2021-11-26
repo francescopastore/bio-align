@@ -1,7 +1,7 @@
 import * as React from 'react'
+
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-
 import Paper from '@mui/material/Paper'
 
 import FormSelectAlgorithm from './AppForm/FormSelectAlgorithm'
@@ -10,51 +10,55 @@ import FormInputNumber from './AppForm/FormInputNumber'
 
 import logic from '../logic'
 
-// change here default values
-const data = {
-  algorithm: logic.algorithms[0],
-  firstWord: 'ATTACTC',
-  secondWord: 'ATATGTC',
-  matchWeight: 1,
-  mismatchWeight: 2,
-  gapWeight: 0,
-}
+import { useSelector, useDispatch } from 'react-redux'
+
+import {
+  setAlgorithm,
+  setFirstString,
+  setSecondString,
+  setMatchWeight,
+  setMismatchWeight,
+  setGapWeight,
+} from '../store/form'
 
 export default function AppForm() {
+  const dispatch = useDispatch()
+  // change here default values
+  const data = useSelector((state) => state.form)
   return (
     <Paper sx={style.container} elevation={4}>
       <FormSelectAlgorithm
         options={logic.algorithms}
         default={0}
-        handle={(v) => (data.algorithm = logic.algorithms[v])}
+        handle={(v) => dispatch(setAlgorithm(v))}
       ></FormSelectAlgorithm>
       <FormInputWord
         label="First word"
-        default={data.firstWord}
-        handle={(v) => (data.firstWord = v)}
+        default={data.firstString}
+        handle={(v) => dispatch(setFirstString(v))}
       ></FormInputWord>
       <FormInputWord
         label="Second word"
-        default={data.secondWord}
-        handle={(v) => (data.secondWord = v)}
+        default={data.secondString}
+        handle={(v) => dispatch(setSecondString(v))}
       ></FormInputWord>
       <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
         <FormInputNumber
           label="Match"
           default={data.matchWeight}
-          handle={(v) => (data.matchWeight = v)}
+          handle={(v) => dispatch(setMatchWeight(v))}
           style={{ mr: 2 }}
         ></FormInputNumber>
         <FormInputNumber
           label="Mismatch"
           default={data.mismatchWeight}
-          handle={(v) => (data.mismatchWeight = v)}
+          handle={(v) => dispatch(setMismatchWeight(v))}
           style={{ mr: 2 }}
         ></FormInputNumber>
         <FormInputNumber
           label="Gap"
           default={data.gapWeight}
-          handle={(v) => (data.gapWeight = v)}
+          handle={(v) => dispatch(setGapWeight(v))}
         ></FormInputNumber>
       </Box>
       <Typography variant="caption">

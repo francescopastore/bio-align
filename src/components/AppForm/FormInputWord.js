@@ -9,22 +9,27 @@ import EditIcon from '@mui/icons-material/Edit'
  */
 export default function FormInputWord(props) {
   const [value, setValue] = React.useState(props.default)
+
   const handle = (e) => {
     const value = e.target.value.toUpperCase()
     setValue(value)
-    props.handle(value)
+    if (!isError()) {
+      props.handle(value)
+    }
   }
+
   const isError = () => {
     return value.length > 20
   }
+
   return (
     <FormControl fullWidth margin="normal">
       <TextField
         onChange={handle}
         label={props.label}
         value={value}
-        error={isError()}
         variant="outlined"
+        error={isError()}
         helperText={isError() ? 'Max 20 alphabetic characters' : ''}
         data-testid="value-input"
         InputProps={{
