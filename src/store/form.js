@@ -1,26 +1,48 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+import logic from '../logic'
+
 const initialState = {
-  firstString: '',
+  algorithm: logic.algorithms[0],
+  firstString: 'ATTACTC',
+  secondString: 'ATATGTC',
+  matchWeight: 1,
+  mismatchWeight: 2,
+  gapWeight: 0,
 }
 
 export const form = createSlice({
   name: 'counter',
   initialState,
   reducers: {
-    setFirstString: (state) => {
-      state.value += 1
+    setAlgorithm: (state, action) => {
+      state.algorithm = logic.algorithms[action.payload]
     },
-    decrement: (state) => {
-      state.value -= 1
+    setFirstString: (state, action) => {
+      state.firstWord = action.payload
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
+    setSecondString: (state, action) => {
+      state.secondString = action.payload
+    },
+    setMatchWeight: (state, action) => {
+      state.matchWeight = action.payload
+    },
+    setMismatchWeight: (state, action) => {
+      state.mismatchWeight = action.payload
+    },
+    setGapWeight: (state, action) => {
+      state.gapWeight = action.payload
     },
   },
 })
 
-// Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = form.actions
+export const {
+  setAlgorithm,
+  setFirstString,
+  setSecondString,
+  setMatchWeight,
+  setMismatchWeight,
+  setGapWeight,
+} = form.actions
 
 export default form.reducer

@@ -1,3 +1,5 @@
+// list of algorithm available
+// each algorithm has a label and a calculate function
 const data = {
   algorithms: [
     { label: 'Needleman-Wunsh', calculate: forTesting },
