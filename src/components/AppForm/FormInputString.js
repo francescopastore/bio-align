@@ -7,19 +7,19 @@ import EditIcon from '@mui/icons-material/Edit'
 /*
  * props: label, defaultValue, handleChange
  */
-export default function FormInputWord(props) {
+export default function FormInputString(props) {
   const [value, setValue] = React.useState(props.default)
 
   const handle = (e) => {
     const value = e.target.value.toUpperCase()
     setValue(value)
-    if (!isError()) {
+    if (!isError(value)) {
       props.handle(value)
     }
   }
 
-  const isError = () => {
-    return value.length > 20
+  const isError = (value) => {
+    return value.length > 8
   }
 
   return (
@@ -29,8 +29,8 @@ export default function FormInputWord(props) {
         label={props.label}
         value={value}
         variant="outlined"
-        error={isError()}
-        helperText={isError() ? 'Max 20 alphabetic characters' : ''}
+        error={isError(value)}
+        helperText={isError(value) ? 'Max 8 alphabetic characters' : ''}
         data-testid="value-input"
         InputProps={{
           startAdornment: (
