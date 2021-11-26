@@ -17,7 +17,7 @@ export const form = createSlice({
       state.algorithm = action.payload
     },
     setFirstString: (state, action) => {
-      state.firstWord = action.payload
+      state.firstString = action.payload
     },
     setSecondString: (state, action) => {
       state.secondString = action.payload

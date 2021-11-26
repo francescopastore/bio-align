@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
 
 import FormSelectAlgorithm from './AppForm/FormSelectAlgorithm'
-import FormInputWord from './AppForm/FormInputWord'
+import FormInputString from './AppForm/FormInputString'
 import FormInputNumber from './AppForm/FormInputNumber'
 
 import logic from '../logic'
@@ -32,16 +32,16 @@ export default function AppForm() {
         default={0}
         handle={(v) => dispatch(setAlgorithm(v))}
       ></FormSelectAlgorithm>
-      <FormInputWord
-        label="First word"
+      <FormInputString
+        label="First string"
         default={data.firstString}
         handle={(v) => dispatch(setFirstString(v))}
-      ></FormInputWord>
-      <FormInputWord
-        label="Second word"
+      ></FormInputString>
+      <FormInputString
+        label="Second string"
         default={data.secondString}
         handle={(v) => dispatch(setSecondString(v))}
-      ></FormInputWord>
+      ></FormInputString>
       <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
         <FormInputNumber
           label="Match"

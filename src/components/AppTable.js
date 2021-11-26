@@ -1,25 +1,16 @@
 import * as React from 'react'
 
 import Box from '@mui/material/Box'
+
 import AppTableCard from './AppTableCard'
 
-const data = [
-  [
-    { value: '' },
-    { value: 'A' },
-    { value: 'B' },
-    { value: 'C' },
-    { value: 'D' },
-  ],
-  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
-  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
-  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
-  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
-  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
-  [{ value: 'A' }, { value: 2 }, { value: 3 }, { value: 4 }, { value: 2 }],
-]
+import logic from '../logic'
 
-export default function AppTable(props) {
+import { useSelector } from 'react-redux'
+
+export default function AppTable() {
+  const form = useSelector((state) => state.form)
+  const data = logic.algorithms[form.algorithm].calculate(form)
   let table = generateTable(data)
 
   return <Box sx={style.container}>{table}</Box>
