@@ -4,9 +4,9 @@ const initialState = {
   algorithm: 0,
   firstString: 'ATTACTC',
   secondString: 'ATATGTC',
-  matchWeight: 1,
+  matchWeight: 0,
   mismatchWeight: 2,
-  gapWeight: 0,
+  gapWeight: 1,
 }
 
 export const form = createSlice({

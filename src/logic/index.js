@@ -1,17 +1,17 @@
-// import editDistance from './edit-distance'
+import editDistance from './edit-distance'
 
 // list of algorithm available
 // each algorithm has a label and a calculate function
 const data = {
   algorithms: [
-    { label: 'Needleman-Wunsh', calculate: calculate },
-    { label: 'Edit Distance', calculate: calculate },
-    { label: 'Longest Common Subsequence', calculate: calculate },
-    { label: 'Smith-Waterman', calculate: calculate },
+    { label: 'Needleman-Wunsh', calculate: editDistance },
+    { label: 'Edit Distance', calculate: editDistance },
+    { label: 'Longest Common Subsequence', calculate: test },
+    { label: 'Smith-Waterman', calculate: test },
   ],
 }
 
-function calculate(data) {
+function test(data) {
   let table = []
   for (let i = 0; i < data.secondString.length; i++) {
     table[i] = []

@@ -25,11 +25,11 @@ function generateTable(form) {
 
   data.forEach((row, i) => {
     let tableRow = []
-    tableRow.push(generateHeaderCell(form.secondString[i], 'left' + i, false))
+    tableRow.push(generateHeaderCell(form.firstString[i], 'left' + i, false))
 
-    row.forEach((cell, colIndex) => {
+    row.forEach((cell, j) => {
       tableRow.push(
-        <Box key={colIndex}>
+        <Box key={j}>
           <AppTableNumber cell={cell}></AppTableNumber>
         </Box>
       )
@@ -47,8 +47,8 @@ function generateTable(form) {
 function generateTopHeader(form) {
   let row = []
   row.push(generateHeaderCell('', 'hidden', true))
-  for (let i = 0; i < form.firstString.length; i++) {
-    row.push(generateHeaderCell(form.firstString[i], 'top' + i, false))
+  for (let i = 0; i < form.secondString.length; i++) {
+    row.push(generateHeaderCell(form.secondString[i], 'top' + i, false))
   }
   const header = (
     <Box key={'top'} sx={style.row}>
