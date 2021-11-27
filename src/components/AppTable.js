@@ -21,13 +21,12 @@ function generateTable(data) {
   data.forEach((row, rowIndex) => {
     let tableRow = []
 
-    row.forEach((col, colIndex) => {
-      const cell = <AppTableCard>{col}</AppTableCard>
-      const visibility = colIndex === 0 && rowIndex === 0 ? 'hidden' : 'visible'
+    row.forEach((cell, colIndex) => {
       // hide first cell
+      const visibility = colIndex === 0 && rowIndex === 0 ? 'hidden' : 'visible'
       tableRow.push(
         <Box key={colIndex} style={{ visibility: visibility }}>
-          {cell}
+          <AppTableCard cell={cell}></AppTableCard>
         </Box>
       )
     })
