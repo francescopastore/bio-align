@@ -12,18 +12,17 @@ export default function FormInputNumber(props) {
 
   const handle = (e) => {
     const value = parseInt(e.target.value)
-    if (isNaN(value)) {
+    if (isError(value)) {
       setValue(0)
+      props.handle(0)
     } else {
       setValue(value)
-    }
-    if (!isError()) {
       props.handle(value)
     }
   }
 
-  const isError = () => {
-    return isNaN(parseInt(value)) || value < -10 || value > 10
+  const isError = (v) => {
+    return isNaN(parseInt(v)) || v < -10 || v > 10
   }
 
   return (
@@ -32,8 +31,8 @@ export default function FormInputNumber(props) {
         onChange={handle}
         label={props.label}
         value={value}
-        error={isError()}
-        helperText={isError() ? '' : ''}
+        error={isError(value)}
+        helperText={isError(value) ? '' : ''}
         variant="outlined"
         data-testid="value-input"
         InputProps={{
