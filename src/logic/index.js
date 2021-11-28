@@ -1,12 +1,12 @@
-import editDistance from './edit-distance'
+import needlemanWunsch from './needleman-wunsch'
+import lcs from './longest-common-subsequence'
 
 // list of algorithm available
 // each algorithm has a label and a calculate function
 const data = {
   algorithms: [
-    { label: 'Needleman-Wunsh', calculate: editDistance },
-    { label: 'Edit Distance', calculate: editDistance },
-    { label: 'Longest Common Subsequence', calculate: test },
+    { label: 'Needleman-Wunsch', calculate: needlemanWunsch },
+    { label: 'Longest Common Subsequence', calculate: lcs },
     { label: 'Smith-Waterman', calculate: test },
   ],
 }

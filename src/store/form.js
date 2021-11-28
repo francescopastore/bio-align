@@ -5,7 +5,7 @@ const initialState = {
   firstString: 'ATTACTC',
   secondString: 'ATATGTC',
   matchWeight: 0,
-  mismatchWeight: 2,
+  mismatchWeight: 1,
   gapWeight: 1,
 }
 
