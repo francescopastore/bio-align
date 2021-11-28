@@ -47,11 +47,6 @@ function openGithub() {
 
 const style = {
   container: {
-    position: 'absolute',
-    top: '98vh',
-    left: '5vw',
-    width: '90vw',
-    height: '5vh',
     p: 3,
   },
   inner: {

@@ -24,7 +24,9 @@ function App() {
       <Box sx={style.rightContainer}>
         <AppTable></AppTable>
       </Box>
-      <AppFooter></AppFooter>
+      <Box sx={style.footer}>
+        <AppFooter></AppFooter>
+      </Box>
     </>
   )
 }
@@ -51,6 +53,12 @@ const style = {
   },
   inner: {
     mb: 3,
+  },
+  footer: {
+    position: 'absolute',
+    top: '98vh',
+    left: '5vw',
+    width: '90vw',
   },
 }
 
