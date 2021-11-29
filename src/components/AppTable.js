@@ -23,29 +23,27 @@ function generateTable(form) {
   const data = logic.algorithms[form.algorithm].calculate(form)
   let table = []
 
-  data.forEach((row, i) => {
+  let string = '-' + form.firstString
+
+  for (let i = 0; i < string.length; i++) {
     let tableRow = []
+    tableRow.push(generateHeaderCell(string[i], 'left' + i, false))
 
-    if (i === 0) {
-      tableRow.push(generateHeaderCell('-l', 'left empty', false))
-    } else {
-      tableRow.push(generateHeaderCell(form.firstString[i], 'left' + i, false))
-    }
-
-    row.forEach((cell, j) => {
+    for (let j = 0; j < data[i].length; j++) {
       tableRow.push(
         <Box key={j}>
-          <AppTableNumber cell={cell}></AppTableNumber>
+          <AppTableNumber cell={data[i][j]}></AppTableNumber>
         </Box>
       )
-    })
+    }
 
     table.push(
       <Box key={i} sx={style.row}>
         {tableRow}
       </Box>
     )
-  })
+  }
+
   return table
 }
 

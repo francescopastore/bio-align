@@ -9,8 +9,11 @@ export default function calculate(data) {
     },
   ]
 
+  let firstString = '-' + data.firstString
+  let secondString = '-' + data.secondString
+
   // first row
-  for (let i = 1; i < data.secondString.length; i++) {
+  for (let i = 1; i < secondString.length; i++) {
     let value = data.gapWeight + table[0][i - 1].value
     table[0].push({
       value: value,
@@ -19,7 +22,7 @@ export default function calculate(data) {
   }
 
   // first column
-  for (let i = 1; i < data.firstString.length; i++) {
+  for (let i = 1; i < firstString.length; i++) {
     table[i] = []
     let value = data.gapWeight + table[i - 1][0].value
     table[i].push({
@@ -29,12 +32,12 @@ export default function calculate(data) {
   }
 
   // filling with values
-  for (let i = 1; i < data.firstString.length; i++) {
-    for (let j = 1; j < data.secondString.length; j++) {
+  for (let i = 1; i < firstString.length; i++) {
+    for (let j = 1; j < secondString.length; j++) {
       let left = data.gapWeight + table[i][j - 1].value
       let top = data.gapWeight + table[i - 1][j].value
       let diag = 0
-      if (data.firstString[i] === data.secondString[j]) {
+      if (firstString[i] === secondString[j]) {
         diag = data.matchWeight + table[i - 1][j - 1].value
       } else {
         diag = data.mismatchWeight + table[i - 1][j - 1].value
@@ -58,8 +61,8 @@ export default function calculate(data) {
   }
 
   // traceback
-  let i = data.firstString.length - 1
-  let j = data.secondString.length - 1
+  let i = firstString.length - 1
+  let j = secondString.length - 1
   while (i !== 0 || j !== 0) {
     table[i][j].isPath = true
     if (table[i][j].diag) {
