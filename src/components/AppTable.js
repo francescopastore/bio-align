@@ -25,7 +25,12 @@ function generateTable(form) {
 
   data.forEach((row, i) => {
     let tableRow = []
-    tableRow.push(generateHeaderCell(form.firstString[i], 'left' + i, false))
+
+    if (i === 0) {
+      tableRow.push(generateHeaderCell('-l', 'left empty', false))
+    } else {
+      tableRow.push(generateHeaderCell(form.firstString[i], 'left' + i, false))
+    }
 
     row.forEach((cell, j) => {
       tableRow.push(
@@ -47,6 +52,7 @@ function generateTable(form) {
 function generateTopHeader(form) {
   let row = []
   row.push(generateHeaderCell('', 'hidden', true))
+  row.push(generateHeaderCell('-', 'top empty', false))
   for (let i = 0; i < form.secondString.length; i++) {
     row.push(generateHeaderCell(form.secondString[i], 'top' + i, false))
   }
