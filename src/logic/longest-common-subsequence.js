@@ -4,12 +4,15 @@ export default function calculate(data) {
   // initialization
   table[0] = [
     {
-      value: data.firstString,
+      value: 0,
     },
   ]
 
+  let firstString = '-' + data.firstString
+  let secondString = '-' + data.secondString
+
   // first row
-  for (let i = 1; i < data.secondString.length; i++) {
+  for (let i = 1; i < secondString.length; i++) {
     table[0].push({
       value: 0,
       left: true,
@@ -17,7 +20,7 @@ export default function calculate(data) {
   }
 
   // first column
-  for (let i = 1; i < data.firstString.length; i++) {
+  for (let i = 1; i < firstString.length; i++) {
     table[i] = []
     table[i].push({
       value: 0,
@@ -25,13 +28,15 @@ export default function calculate(data) {
     })
   }
 
+  let tableMax = 0
+
   // filling with values
-  for (let i = 1; i < data.firstString.length; i++) {
-    for (let j = 1; j < data.secondString.length; j++) {
+  for (let i = 1; i < firstString.length; i++) {
+    for (let j = 1; j < secondString.length; j++) {
       let left = table[i][j - 1].value
       let top = table[i - 1][j].value
       let diag = 0
-      if (data.firstString[i] === data.secondString[j]) {
+      if (firstString[i] === secondString[j]) {
         diag = table[i - 1][j - 1].value + 1
       } else {
         diag = table[i - 1][j - 1].value
@@ -45,6 +50,10 @@ export default function calculate(data) {
         max = diag
       }
 
+      if (max > tableMax) {
+        tableMax = max
+      }
+
       table[i].push({
         value: max,
         left: max === left,
@@ -54,20 +63,33 @@ export default function calculate(data) {
     }
   }
 
-  // traceback
-  // let i = data.firstString.length - 1
-  // let j = data.secondString.length - 1
-  // while (i !== 0 || j !== 0) {
-  //   table[i][j].isPath = true
-  //   if (table[i][j].diag) {
-  //     i--
-  //     j--
-  //   } else if (table[i][j].left) {
-  //     j--
-  //   } else {
-  //     i--
-  //   }
-  // }
+  let row = 0
+  let col = 0
+  for (let i = 1; i < firstString.length; i++) {
+    for (let j = 1; j < secondString.length; j++) {
+      if (table[i][j].value === tableMax) {
+        row = i
+        col = j
+        break
+      }
+    }
+    if (row !== 0) {
+      break
+    }
+  }
+
+  while (table[row][col] !== 0 && row !== 0 && col !== 0) {
+    table[row][col].isPath = true
+    if (table[row][col].diag) {
+      row--
+      col--
+    } else if (table[row][col].left) {
+      col--
+    } else {
+      row--
+    }
+  }
+  table[row][col].isPath = true
 
   return table
 }
