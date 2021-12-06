@@ -21,35 +21,35 @@ it('renders correctly', () => {
   expect(tree).toMatchSnapshot()
 })
 
-// test('default value param', () => {
-//   render(
-//     <FormInputWord
-//       defaultValue={fakeDefaultValue}
-//       label={fakeLabel}
-//       handleChange={fakeHandleChange}
-//     ></FormInputWord>
-//   )
+test('default value param', () => {
+  render(
+    <FormInputString
+      default={fakeDefaultValue}
+      label={fakeLabel}
+      handle={fakeHandleChange}
+    ></FormInputString>
+  )
 
-//   const input = screen.getByTestId('value-input').querySelector('input')
-//   expect(input).toHaveValue(fakeDefaultValue)
-// })
+  const input = screen.getByTestId('value-input').querySelector('input')
+  expect(input).toHaveValue(fakeDefaultValue)
+})
 
-// test('handle change param', () => {
-//   const newValue = 'TEST'
-//   const fakeHandleChange = (value) => {
-//     expect(value).toBe(newValue)
-//   }
-//   render(
-//     <FormInputWord
-//       defaultValue={fakeDefaultValue}
-//       label={fakeLabel}
-//       handleChange={fakeHandleChange}
-//     ></FormInputWord>
-//   )
+test('handle change param', () => {
+  const newValue = 'TEST'
+  const fakeHandleChange = (value) => {
+    expect(value).toBe(newValue)
+  }
+  render(
+    <FormInputString
+      default={fakeDefaultValue}
+      label={fakeLabel}
+      handle={fakeHandleChange}
+    ></FormInputString>
+  )
 
-//   const input = screen.getByTestId('value-input').querySelector('input')
-//   expect(input).toBeInTheDocument()
+  const input = screen.getByTestId('value-input').querySelector('input')
+  expect(input).toBeInTheDocument()
 
-//   fireEvent.change(input, { target: { value: newValue } })
-//   expect(input).toHaveValue(newValue)
-// })
+  fireEvent.change(input, { target: { value: newValue } })
+  expect(input).toHaveValue(newValue)
+})
