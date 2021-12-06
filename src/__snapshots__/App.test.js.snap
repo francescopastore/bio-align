@@ -3,36 +3,33 @@
 exports[`renders correctly 1`] = `
 Array [
   <div
-    className="MuiBox-root css-d8lyhh"
+    className="MuiBox-root css-1954t6n"
   >
     <div
       className="MuiBox-root css-i3pbo"
     >
       <div
-        className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation12 css-1gp9424-MuiPaper-root"
+        className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-1xf3l2z-MuiPaper-root"
       >
-        <div
-          className="MuiBox-root css-1xhj18k"
-        >
-          <div
-            className="MuiAvatar-root MuiAvatar-circular css-zjb5mq-MuiAvatar-root"
-          >
-            <img
-              alt="app icon"
-              className="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
-              src="/icon.png"
-            />
-          </div>
-          <h1
-            className="MuiTypography-root MuiTypography-h3 css-1xuzize-MuiTypography-root"
-          >
-            BioAlign
-          </h1>
-        </div>
+        <img
+          alt="header"
+          src="/header.png"
+          style={
+            Object {
+              "height": "100%",
+              "objectFit": "contain",
+              "width": "100%",
+            }
+          }
+        />
       </div>
     </div>
+  </div>,
+  <div
+    className="MuiBox-root css-epsgxh"
+  >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation12 css-1gp9424-MuiPaper-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-1rnkv3u-MuiPaper-root"
     >
       <div
         className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-1iledgx-MuiFormControl-root"
@@ -84,7 +81,7 @@ Array [
             role="button"
             tabIndex={0}
           >
-            Edit Distance
+            Needleman-Wunsch
           </div>
           <input
             aria-hidden={true}
@@ -94,7 +91,7 @@ Array [
             onChange={[Function]}
             required={false}
             tabIndex={-1}
-            value="edit"
+            value={0}
           />
           <svg
             aria-hidden={true}
@@ -132,7 +129,7 @@ Array [
             className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink={true}
           >
-            First word
+            First string
           </label>
           <div
             className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
@@ -182,7 +179,7 @@ Array [
                 className="css-1z7n62"
               >
                 <span>
-                  First word
+                  First string
                 </span>
               </legend>
             </fieldset>
@@ -201,7 +198,7 @@ Array [
             className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink={true}
           >
-            Second word
+            Second string
           </label>
           <div
             className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
@@ -251,7 +248,7 @@ Array [
                 className="css-1z7n62"
               >
                 <span>
-                  Second word
+                  Second string
                 </span>
               </legend>
             </fieldset>
@@ -260,349 +257,3682 @@ Array [
         </div>
       </div>
       <div
-        className="MuiBox-root css-i3pbo"
+        className="MuiBox-root css-1bnxa12"
       >
-        <p
-          className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-d3wcwz-MuiTypography-root"
-          id="input-slider"
-        >
-          Weight
-        </p>
         <div
-          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-ofrcno-MuiGrid-root"
+          className="MuiFormControl-root MuiFormControl-marginNormal css-1n47m0m-MuiFormControl-root"
         >
           <div
-            className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+            data-testid="value-input"
           >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-              data-testid="SwapHorizIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
+            <label
+              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink={true}
             >
-              <path
-                d="M6.99 11 3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"
-              />
-            </svg>
-          </div>
-          <div
-            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-4jz4pb-MuiGrid-root"
-          >
-            <span
-              className="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-187mznn-MuiSlider-root"
-              onMouseDown={[Function]}
+              Match
+            </label>
+            <div
+              className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+              onClick={[Function]}
             >
-              <span
-                className="MuiSlider-rail css-14pt78w-MuiSlider-rail"
-              />
-              <span
-                className="MuiSlider-track css-1gv0vcd-MuiSlider-track"
-                style={
-                  Object {
-                    "left": "0%",
-                    "width": "50%",
-                  }
-                }
-              />
-              <span
-                className="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-eg0mwd-MuiSlider-thumb"
-                data-index={0}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "left": "50%",
-                    "pointerEvents": undefined,
-                  }
-                }
+              <div
+                className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
               >
-                <input
-                  aria-orientation="horizontal"
-                  aria-valuemax={10}
-                  aria-valuemin={-10}
-                  aria-valuenow={0}
-                  data-index={0}
-                  disabled={false}
-                  max={10}
-                  min={-10}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  step={1}
-                  style={
+                <span
+                  className="notranslate"
+                  dangerouslySetInnerHTML={
                     Object {
-                      "border": 0,
-                      "clip": "rect(0 0 0 0)",
-                      "direction": "ltr",
-                      "height": "100%",
-                      "margin": -1,
-                      "overflow": "hidden",
-                      "padding": 0,
-                      "position": "absolute",
-                      "whiteSpace": "nowrap",
-                      "width": "100%",
+                      "__html": "&#8203;",
                     }
                   }
-                  type="range"
-                  value={0}
                 />
-              </span>
-            </span>
-          </div>
-          <div
-            className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
-          >
-            <div
-              className="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-sizeSmall css-18igo3j-MuiInputBase-root-MuiInput-root"
-              onClick={[Function]}
-              variant="outlined"
-            >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="LooksOneIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2V9h-2V7h4v10z"
+                  />
+                </svg>
+              </div>
               <input
-                aria-labelledby="input-slider"
-                className="MuiInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
-                max={10}
-                min={-10}
+                aria-invalid={false}
+                autoFocus={false}
+                className="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+                disabled={false}
                 onAnimationStart={[Function]}
                 onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
-                step={1}
-                type="number"
+                required={false}
+                type="text"
                 value={0}
               />
+              <fieldset
+                aria-hidden={true}
+                className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  className="css-1z7n62"
+                >
+                  <span>
+                    Match
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+            
+          </div>
+        </div>
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal css-1n47m0m-MuiFormControl-root"
+        >
+          <div
+            className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+            data-testid="value-input"
+          >
+            <label
+              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink={true}
+            >
+              Mismatch
+            </label>
+            <div
+              className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+              onClick={[Function]}
+            >
+              <div
+                className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+              >
+                <span
+                  className="notranslate"
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "&#8203;",
+                    }
+                  }
+                />
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="LooksOneIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2V9h-2V7h4v10z"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid={false}
+                autoFocus={false}
+                className="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+                disabled={false}
+                onAnimationStart={[Function]}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value={1}
+              />
+              <fieldset
+                aria-hidden={true}
+                className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  className="css-1z7n62"
+                >
+                  <span>
+                    Mismatch
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+            
+          </div>
+        </div>
+        <div
+          className="MuiFormControl-root MuiFormControl-marginNormal css-ufpu9p-MuiFormControl-root"
+        >
+          <div
+            className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+            data-testid="value-input"
+          >
+            <label
+              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink={true}
+            >
+              Gap
+            </label>
+            <div
+              className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+              onClick={[Function]}
+            >
+              <div
+                className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+              >
+                <span
+                  className="notranslate"
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "&#8203;",
+                    }
+                  }
+                />
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="LooksOneIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2V9h-2V7h4v10z"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid={false}
+                autoFocus={false}
+                className="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+                disabled={false}
+                onAnimationStart={[Function]}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value={1}
+              />
+              <fieldset
+                aria-hidden={true}
+                className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  className="css-1z7n62"
+                >
+                  <span>
+                    Gap
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <span
+        className="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+      >
+        Only weights between -10 and 10 are allowed
+      </span>
+    </div>
+  </div>,
+  <div
+    className="MuiBox-root css-bqw2iu"
+  >
+    <div
+      className="MuiBox-root css-0"
+    >
+      <div
+        className="MuiBox-root css-k008qs"
+      >
+        <div
+          className="MuiBox-root css-gyp8mm"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              -
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              A
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              T
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              A
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              T
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              G
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              T
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              C
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiBox-root css-k008qs"
+      >
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              -
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                0
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                1
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                2
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                3
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                4
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                5
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                6
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                7
+              </h6>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="MuiBox-root css-i3pbo"
+        className="MuiBox-root css-k008qs"
       >
-        <p
-          className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-d3wcwz-MuiTypography-root"
-          id="input-slider"
-        >
-          Weight
-        </p>
         <div
-          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-ofrcno-MuiGrid-root"
+          className="MuiBox-root css-0"
         >
           <div
-            className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
           >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-              data-testid="SwapHorizIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
             >
-              <path
-                d="M6.99 11 3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"
-              />
-            </svg>
+              A
+            </p>
           </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
           <div
-            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-4jz4pb-MuiGrid-root"
-          >
-            <span
-              className="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-187mznn-MuiSlider-root"
-              onMouseDown={[Function]}
-            >
-              <span
-                className="MuiSlider-rail css-14pt78w-MuiSlider-rail"
-              />
-              <span
-                className="MuiSlider-track css-1gv0vcd-MuiSlider-track"
-                style={
-                  Object {
-                    "left": "0%",
-                    "width": "50%",
-                  }
-                }
-              />
-              <span
-                className="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-eg0mwd-MuiSlider-thumb"
-                data-index={0}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "left": "50%",
-                    "pointerEvents": undefined,
-                  }
-                }
-              >
-                <input
-                  aria-orientation="horizontal"
-                  aria-valuemax={10}
-                  aria-valuemin={-10}
-                  aria-valuenow={0}
-                  data-index={0}
-                  disabled={false}
-                  max={10}
-                  min={-10}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  step={1}
-                  style={
-                    Object {
-                      "border": 0,
-                      "clip": "rect(0 0 0 0)",
-                      "direction": "ltr",
-                      "height": "100%",
-                      "margin": -1,
-                      "overflow": "hidden",
-                      "padding": 0,
-                      "position": "absolute",
-                      "whiteSpace": "nowrap",
-                      "width": "100%",
-                    }
-                  }
-                  type="range"
-                  value={0}
-                />
-              </span>
-            </span>
-          </div>
-          <div
-            className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
           >
             <div
-              className="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-sizeSmall css-18igo3j-MuiInputBase-root-MuiInput-root"
-              onClick={[Function]}
-              variant="outlined"
+              className="MuiBox-root css-1nvf2ph"
             >
-              <input
-                aria-labelledby="input-slider"
-                className="MuiInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
-                max={10}
-                min={-10}
-                onAnimationStart={[Function]}
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                step={1}
-                type="number"
-                value={0}
-              />
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                1
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                2
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                3
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                4
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                5
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                6
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                7
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                8
+              </h6>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="MuiBox-root css-i3pbo"
+        className="MuiBox-root css-k008qs"
       >
-        <p
-          className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-d3wcwz-MuiTypography-root"
-          id="input-slider"
-        >
-          Weight
-        </p>
         <div
-          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-ofrcno-MuiGrid-root"
+          className="MuiBox-root css-0"
         >
           <div
-            className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
           >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-              data-testid="SwapHorizIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
             >
-              <path
-                d="M6.99 11 3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"
-              />
-            </svg>
+              T
+            </p>
           </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
           <div
-            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-4jz4pb-MuiGrid-root"
-          >
-            <span
-              className="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-187mznn-MuiSlider-root"
-              onMouseDown={[Function]}
-            >
-              <span
-                className="MuiSlider-rail css-14pt78w-MuiSlider-rail"
-              />
-              <span
-                className="MuiSlider-track css-1gv0vcd-MuiSlider-track"
-                style={
-                  Object {
-                    "left": "0%",
-                    "width": "50%",
-                  }
-                }
-              />
-              <span
-                className="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-eg0mwd-MuiSlider-thumb"
-                data-index={0}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                style={
-                  Object {
-                    "left": "50%",
-                    "pointerEvents": undefined,
-                  }
-                }
-              >
-                <input
-                  aria-orientation="horizontal"
-                  aria-valuemax={10}
-                  aria-valuemin={-10}
-                  aria-valuenow={0}
-                  data-index={0}
-                  disabled={false}
-                  max={10}
-                  min={-10}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  step={1}
-                  style={
-                    Object {
-                      "border": 0,
-                      "clip": "rect(0 0 0 0)",
-                      "direction": "ltr",
-                      "height": "100%",
-                      "margin": -1,
-                      "overflow": "hidden",
-                      "padding": 0,
-                      "position": "absolute",
-                      "whiteSpace": "nowrap",
-                      "width": "100%",
-                    }
-                  }
-                  type="range"
-                  value={0}
-                />
-              </span>
-            </span>
-          </div>
-          <div
-            className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
           >
             <div
-              className="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-sizeSmall css-18igo3j-MuiInputBase-root-MuiInput-root"
-              onClick={[Function]}
-              variant="outlined"
+              className="MuiBox-root css-1nvf2ph"
             >
-              <input
-                aria-labelledby="input-slider"
-                className="MuiInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
-                max={10}
-                min={-10}
-                onAnimationStart={[Function]}
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                step={1}
-                type="number"
-                value={0}
-              />
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                2
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                3
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                4
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                5
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                6
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                7
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                8
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                9
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiBox-root css-k008qs"
+      >
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              T
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                3
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                4
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                5
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                6
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                7
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                8
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                9
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                10
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiBox-root css-k008qs"
+      >
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              A
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                4
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                5
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                6
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                7
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                8
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                9
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                10
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                11
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiBox-root css-k008qs"
+      >
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              C
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                5
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                6
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                7
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                8
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                9
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                10
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                11
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                12
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiBox-root css-k008qs"
+      >
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              T
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                6
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                7
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                8
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                9
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                10
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                11
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                12
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1rhjugb-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                13
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiBox-root css-k008qs"
+      >
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1uj8utb-MuiPaper-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+            >
+              C
+            </p>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wvslln-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                7
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                8
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                9
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                10
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                11
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                12
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                13
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root css-0"
+        >
+          <div
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-132no92-MuiPaper-root"
+          >
+            <div
+              className="MuiBox-root css-1nvf2ph"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5do798-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowUpwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-f9jn21-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                />
+              </svg>
+              <h6
+                className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              >
+                14
+              </h6>
             </div>
           </div>
         </div>
@@ -610,65 +3940,69 @@ Array [
     </div>
   </div>,
   <div
-    className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation12 css-1bywbq1-MuiPaper-root"
+    className="MuiBox-root css-1ps7ns7"
   >
     <div
-      className="MuiBox-root css-1j9zy8k"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-1rnkv3u-MuiPaper-root"
     >
       <div
-        className="MuiBox-root css-0"
-      />
-      <div
-        className="MuiBox-root css-xi606m"
+        className="MuiBox-root css-1j9zy8k"
       >
-        <p
-          className="MuiTypography-root MuiTypography-body1 css-f46jb1-MuiTypography-root"
+        <div
+          className="MuiBox-root css-0"
+        />
+        <div
+          className="MuiBox-root css-xi606m"
         >
-          Made with 
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1os7umh-MuiTypography-root-MuiLink-root"
-            onBlur={[Function]}
-            onFocus={[Function]}
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-f46jb1-MuiTypography-root"
           >
-            ♥
-          </a>
-           using 
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1oaaite-MuiTypography-root-MuiLink-root"
-            href="https://reactjs.org/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            target="_blank"
-          >
-            React.js
-          </a>
-           and 
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1oaaite-MuiTypography-root-MuiLink-root"
-            href="https://mui.com"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            target="_blank"
-          >
-            MUI
-          </a>
-        </p>
-      </div>
-      <div
-        className="MuiBox-root css-s2uf1z"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-m5acjk-MuiSvgIcon-root"
-          data-testid="GitHubIcon"
-          focusable="false"
-          onClick={[Function]}
-          viewBox="0 0 24 24"
+            Made with 
+            <a
+              className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1os7umh-MuiTypography-root-MuiLink-root"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              ♥
+            </a>
+             using 
+            <a
+              className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1oaaite-MuiTypography-root-MuiLink-root"
+              href="https://reactjs.org/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              target="_blank"
+            >
+              React.js
+            </a>
+             and 
+            <a
+              className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-1oaaite-MuiTypography-root-MuiLink-root"
+              href="https://mui.com"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              target="_blank"
+            >
+              MUI
+            </a>
+          </p>
+        </div>
+        <div
+          className="MuiBox-root css-s2uf1z"
         >
-          <path
-            d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-          />
-        </svg>
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-m5acjk-MuiSvgIcon-root"
+            data-testid="GitHubIcon"
+            focusable="false"
+            onClick={[Function]}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </div>,
