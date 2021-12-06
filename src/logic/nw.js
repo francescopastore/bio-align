@@ -31,6 +31,7 @@ export default function calculate(data) {
     })
   }
 
+  console.log('min')
   // filling with values
   for (let i = 1; i < firstString.length; i++) {
     for (let j = 1; j < secondString.length; j++) {
@@ -43,19 +44,19 @@ export default function calculate(data) {
         diag = data.mismatchWeight + table[i - 1][j - 1].value
       }
 
-      let min = left
-      if (top < min) {
-        min = top
+      let goal = left
+      if (top > goal) {
+        goal = top
       }
-      if (diag < min) {
-        min = diag
+      if (diag > goal) {
+        goal = diag
       }
 
       table[i].push({
-        value: min,
-        left: min === left,
-        top: min === top,
-        diag: min === diag,
+        value: goal,
+        left: goal === left,
+        top: goal === top,
+        diag: goal === diag,
       })
     }
   }

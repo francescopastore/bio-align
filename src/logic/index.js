@@ -1,11 +1,11 @@
-import needlemanWunsch from './needleman-wunsch'
-import lcs from './longest-common-subsequence'
+import nw from './nw'
+import lcs from './lcs'
 
 // list of algorithm available
 // each algorithm has a label and a calculate function
 const data = {
   algorithms: [
-    { label: 'Needleman-Wunsch', calculate: needlemanWunsch },
+    { label: 'Needleman-Wunsch', calculate: nw },
     { label: 'Longest Common Subsequence', calculate: lcs },
     { label: 'Smith-Waterman', calculate: test },
   ],
