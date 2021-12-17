@@ -57,19 +57,23 @@ function fill(table, firstString, secondString, data) {
         diag = data.mismatchWeight + table[i - 1][j - 1].value
       }
 
-      let goal = left
-      if (top > goal) {
-        goal = top
+      let max = left
+      if (top > max) {
+        max = top
       }
-      if (diag > goal) {
-        goal = diag
+      if (diag > max) {
+        max = diag
+      }
+
+      if (max < 0) {
+        max = 0
       }
 
       table[i].push({
-        value: goal,
-        left: goal === left,
-        top: goal === top,
-        diag: goal === diag,
+        value: max,
+        left: max === left,
+        top: max === top,
+        diag: max === diag,
       })
     }
   }
