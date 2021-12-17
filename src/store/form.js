@@ -6,6 +6,7 @@ const initialState = {
   algorithm: 0,
   firstString: 'ATTACTC',
   secondString: 'ATATGTC',
+  disableWeights: logic.algorithms[0].disableWeights,
   matchWeight: logic.algorithms[0].matchWeight,
   mismatchWeight: logic.algorithms[0].mismatchWeight,
   gapWeight: logic.algorithms[0].gapWeight,
@@ -17,9 +18,17 @@ export const form = createSlice({
   reducers: {
     setAlgorithm: (state, action) => {
       state.algorithm = action.payload
-      state.matchWeight = logic.algorithms[state.algorithm].matchWeight
-      state.mismatchWeight = logic.algorithms[state.algorithm].mismatchWeight
-      state.gapWeight = logic.algorithms[state.algorithm].gapWeight
+      const algorithm = logic.algorithms[state.algorithm]
+      state.disableWeights = algorithm.disableWeights
+      if (algorithm.disableWeights) {
+        state.matchWeight = 0
+        state.mismatchWeight = 0
+        state.gapWeight = 0
+        return
+      }
+      state.matchWeight = algorithm.matchWeight
+      state.mismatchWeight = algorithm.mismatchWeight
+      state.gapWeight = algorithm.gapWeight
     },
     setFirstString: (state, action) => {
       state.firstString = action.payload

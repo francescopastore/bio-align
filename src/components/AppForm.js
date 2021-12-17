@@ -47,18 +47,21 @@ export default function AppForm() {
           label="Match"
           default={data.matchWeight}
           handle={(v) => dispatch(setMatchWeight(v))}
+          disabled={data.disableWeights}
           style={{ mr: 2 }}
         ></FormInputNumber>
         <FormInputNumber
           label="Mismatch"
           default={data.mismatchWeight}
           handle={(v) => dispatch(setMismatchWeight(v))}
+          disabled={data.disableWeights}
           style={{ mr: 2 }}
         ></FormInputNumber>
         <FormInputNumber
           label="Gap"
           default={data.gapWeight}
           handle={(v) => dispatch(setGapWeight(v))}
+          disabled={data.disableWeights}
         ></FormInputNumber>
       </Box>
       <Typography variant="caption">

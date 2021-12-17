@@ -4,11 +4,12 @@ import FormControl from '@mui/material/FormControl'
 import InputAdornment from '@mui/material/InputAdornment'
 import LooksOneIcon from '@mui/icons-material/LooksOne'
 
-/*
- * props: label, defaultValue, handleChange
- */
 export default function FormInputNumber(props) {
   const [value, setValue] = React.useState(props.default)
+
+  React.useEffect(() => {
+    setValue(props.default)
+  }, [props.default])
 
   const handle = (e) => {
     const value = e.target.value
@@ -26,6 +27,7 @@ export default function FormInputNumber(props) {
   return (
     <FormControl margin="normal" sx={props.style}>
       <TextField
+        disabled={props.disabled}
         onChange={handle}
         label={props.label}
         value={value}
