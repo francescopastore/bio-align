@@ -1,6 +1,19 @@
 export default function calculate(data) {
   let table = []
 
+  let firstString = '-' + data.firstString
+  let secondString = '-' + data.secondString
+
+  table = initialize(table, firstString, secondString, data.gapWeight)
+
+  table = fill(table, firstString, secondString, data)
+
+  table = traceback(table, firstString, secondString)
+
+  return table
+}
+
+function initialize(table, firstString, secondString, gapWeight) {
   // initialization
   table[0] = [
     {
@@ -9,12 +22,9 @@ export default function calculate(data) {
     },
   ]
 
-  let firstString = '-' + data.firstString
-  let secondString = '-' + data.secondString
-
   // first row
   for (let i = 1; i < secondString.length; i++) {
-    let value = data.gapWeight + table[0][i - 1].value
+    let value = gapWeight + table[0][i - 1].value
     table[0].push({
       value: value,
       left: true,
@@ -24,14 +34,17 @@ export default function calculate(data) {
   // first column
   for (let i = 1; i < firstString.length; i++) {
     table[i] = []
-    let value = data.gapWeight + table[i - 1][0].value
+    let value = gapWeight + table[i - 1][0].value
     table[i].push({
       value: value,
       top: true,
     })
   }
 
-  console.log('min')
+  return table
+}
+
+function fill(table, firstString, secondString, data) {
   // filling with values
   for (let i = 1; i < firstString.length; i++) {
     for (let j = 1; j < secondString.length; j++) {
@@ -61,6 +74,10 @@ export default function calculate(data) {
     }
   }
 
+  return table
+}
+
+function traceback(table, firstString, secondString) {
   // traceback
   let i = firstString.length - 1
   let j = secondString.length - 1

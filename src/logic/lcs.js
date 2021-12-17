@@ -109,4 +109,6 @@ function traceback(table, firstString, secondString, tableMax) {
       row--
     }
   }
+
+  return table
 }
