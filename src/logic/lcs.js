@@ -1,6 +1,20 @@
 export default function calculate(data) {
   let table = []
 
+  let firstString = '-' + data.firstString
+  let secondString = '-' + data.secondString
+
+  table = initialize(table, firstString, secondString)
+
+  let result = fill(table, firstString, secondString)
+  table = result.table
+
+  table = traceback(table, firstString, secondString, result.tableMax)
+
+  return table
+}
+
+function initialize(table, firstString, secondString) {
   // initialization
   table[0] = [
     {
@@ -8,14 +22,10 @@ export default function calculate(data) {
     },
   ]
 
-  let firstString = '-' + data.firstString
-  let secondString = '-' + data.secondString
-
   // first row
   for (let i = 1; i < secondString.length; i++) {
     table[0].push({
       value: 0,
-      left: true,
     })
   }
 
@@ -24,10 +34,13 @@ export default function calculate(data) {
     table[i] = []
     table[i].push({
       value: 0,
-      top: true,
     })
   }
 
+  return table
+}
+
+function fill(table, firstString, secondString) {
   let tableMax = 0
 
   // filling with values
@@ -56,15 +69,21 @@ export default function calculate(data) {
 
       table[i].push({
         value: max,
-        left: max === left,
-        top: max === top,
-        diag: max === diag,
+        left: max !== 0 && max === left,
+        top: max !== 0 && max === top,
+        diag: max !== 0 && max === diag,
       })
     }
   }
 
+  return { table, tableMax }
+}
+
+function traceback(table, firstString, secondString, tableMax) {
   let row = 0
   let col = 0
+
+  // search for max value index
   for (let i = 1; i < firstString.length; i++) {
     for (let j = 1; j < secondString.length; j++) {
       if (table[i][j].value === tableMax) {
@@ -78,7 +97,8 @@ export default function calculate(data) {
     }
   }
 
-  while (table[row][col] !== 0 && row !== 0 && col !== 0) {
+  // traceback to find the path
+  while (table[row][col].value !== 0 && row !== 0 && col !== 0) {
     table[row][col].isPath = true
     if (table[row][col].diag) {
       row--
@@ -89,7 +109,4 @@ export default function calculate(data) {
       row--
     }
   }
-  table[row][col].isPath = true
-
-  return table
 }
