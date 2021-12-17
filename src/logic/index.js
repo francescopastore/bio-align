@@ -1,3 +1,4 @@
+import ld from './ld'
 import nw from './nw'
 import lcs from './lcs'
 
@@ -5,8 +6,25 @@ import lcs from './lcs'
 // each algorithm has a label and a calculate function
 const data = {
   algorithms: [
-    { label: 'Needleman-Wunsch', calculate: nw },
-    { label: 'Longest Common Subsequence', calculate: lcs },
+    {
+      label: 'Levenshtein distance',
+      calculate: ld,
+      matchWeight: 0,
+      mismatchWeight: 1,
+      gapWeight: 1,
+    },
+    {
+      label: 'Needleman-Wunsch',
+      calculate: nw,
+      matchWeight: 1,
+      mismatchWeight: -1,
+      gapWeight: -1,
+    },
+    {
+      label: 'Longest Common Subsequence',
+      calculate: lcs,
+      disableWeights: true,
+    },
     { label: 'Smith-Waterman', calculate: test },
   ],
 }
