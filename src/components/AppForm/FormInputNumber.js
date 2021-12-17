@@ -11,18 +11,16 @@ export default function FormInputNumber(props) {
   const [value, setValue] = React.useState(props.default)
 
   const handle = (e) => {
-    const value = parseInt(e.target.value)
-    if (isError(value)) {
-      setValue(0)
-      props.handle(0)
-    } else {
-      setValue(value)
-      props.handle(value)
+    const value = e.target.value
+    setValue(value)
+    if (!isError(value) && !isNaN(value)) {
+      console.log(value)
+      props.handle(parseInt(value))
     }
   }
 
   const isError = (v) => {
-    return isNaN(parseInt(v)) || v < -10 || v > 10
+    return (isNaN(parseInt(v)) && v !== '-') || v < -10 || v > 10
   }
 
   return (
