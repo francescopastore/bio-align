@@ -46,8 +46,6 @@ const tests = [
 it('should calculate correctly', () => {
   tests.forEach((v) => {
     const actual = lcs(v.data)
-    console.log(v.expected)
-    console.log(actual)
     expect(actual).toEqual(v.expected)
   })
 })
