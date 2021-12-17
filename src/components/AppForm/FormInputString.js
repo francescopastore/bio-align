@@ -2,16 +2,21 @@ import * as React from 'react'
 import TextField from '@mui/material/TextField'
 import InputAdornment from '@mui/material/InputAdornment'
 import FormControl from '@mui/material/FormControl'
-import EditIcon from '@mui/icons-material/Edit'
+import IconButton from '@mui/material/IconButton'
 
-/*
- * props: label, defaultValue, handleChange
- */
+import EditIcon from '@mui/icons-material/Edit'
+import ShuffleIcon from '@mui/icons-material/Shuffle'
+
 export default function FormInputString(props) {
+  const maxLength = 8
   const [value, setValue] = React.useState(props.default)
 
   const handle = (e) => {
     const value = e.target.value.toUpperCase()
+    changeValue(value)
+  }
+
+  const changeValue = (value) => {
     setValue(value)
     if (!isError(value)) {
       props.handle(value)
@@ -19,7 +24,7 @@ export default function FormInputString(props) {
   }
 
   const isError = (value) => {
-    return value.length > 8
+    return value.length > maxLength
   }
 
   return (
@@ -38,8 +43,47 @@ export default function FormInputString(props) {
               <EditIcon />
             </InputAdornment>
           ),
+          endAdornment: (
+            <InputAdornment position="end">
+              <IconButton
+                data-testid="shuffle-button"
+                onClick={() => {
+                  let value = shuffle(maxLength)
+                  changeValue(value)
+                }}
+              >
+                <ShuffleIcon></ShuffleIcon>
+              </IconButton>
+            </InputAdornment>
+          ),
         }}
       />
     </FormControl>
   )
+}
+
+function shuffle(maxLength) {
+  let string = ''
+  let offset = maxLength / 2
+  let length = offset + Math.round(Math.random() * offset)
+
+  for (let i = 0; i < length; i++) {
+    let rand = Math.round(Math.random() * 3)
+    switch (rand) {
+      default:
+        string += 'A'
+        break
+      case 1:
+        string += 'C'
+        break
+      case 2:
+        string += 'G'
+        break
+      case 3:
+        string += 'T'
+        break
+    }
+  }
+
+  return string
 }

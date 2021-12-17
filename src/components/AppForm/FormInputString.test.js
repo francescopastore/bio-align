@@ -6,7 +6,7 @@ import FormInputString from './FormInputString'
 
 const fakeHandleChange = () => {}
 const fakeLabel = 'test'
-const fakeDefaultValue = 'ACTC'
+const fakeDefaultValue = 'TEST'
 
 it('renders correctly', () => {
   const tree = renderer
@@ -52,4 +52,24 @@ test('handle change param', () => {
 
   fireEvent.change(input, { target: { value: newValue } })
   expect(input).toHaveValue(newValue)
+})
+
+test('shuffle', () => {
+  render(
+    <FormInputString
+      default={fakeDefaultValue}
+      label={fakeLabel}
+      handle={fakeHandleChange}
+    ></FormInputString>
+  )
+
+  const button = screen.getByTestId('shuffle-button')
+  expect(button).toBeInTheDocument()
+
+  fireEvent.click(button)
+
+  const input = screen.getByTestId('value-input').querySelector('input')
+  expect(input).toBeInTheDocument()
+
+  expect(input.value).not.toEqual(fakeDefaultValue)
 })
