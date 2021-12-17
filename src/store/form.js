@@ -1,12 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+import logic from '../logic'
+
 const initialState = {
   algorithm: 0,
   firstString: 'ATTACTC',
   secondString: 'ATATGTC',
-  matchWeight: 0,
-  mismatchWeight: 1,
-  gapWeight: 1,
+  matchWeight: logic.algorithms[0].matchWeight,
+  mismatchWeight: logic.algorithms[0].mismatchWeight,
+  gapWeight: logic.algorithms[0].gapWeight,
 }
 
 export const form = createSlice({
@@ -15,6 +17,9 @@ export const form = createSlice({
   reducers: {
     setAlgorithm: (state, action) => {
       state.algorithm = action.payload
+      state.matchWeight = logic.algorithms[state.algorithm].matchWeight
+      state.mismatchWeight = logic.algorithms[state.algorithm].mismatchWeight
+      state.gapWeight = logic.algorithms[state.algorithm].gapWeight
     },
     setFirstString: (state, action) => {
       state.firstString = action.payload
