@@ -339,13 +339,13 @@ Array [
             data-testid="value-input"
           >
             <label
-              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-disabled MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink={true}
             >
               Match
             </label>
             <div
-              className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+              className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-disabled MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
               onClick={[Function]}
             >
               <div
@@ -374,8 +374,8 @@ Array [
               <input
                 aria-invalid={false}
                 autoFocus={false}
-                className="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
-                disabled={false}
+                className="MuiOutlinedInput-input MuiInputBase-input Mui-disabled MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+                disabled={true}
                 onAnimationStart={[Function]}
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -408,13 +408,13 @@ Array [
             data-testid="value-input"
           >
             <label
-              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-disabled MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink={true}
             >
               Mismatch
             </label>
             <div
-              className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+              className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-disabled MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
               onClick={[Function]}
             >
               <div
@@ -443,8 +443,8 @@ Array [
               <input
                 aria-invalid={false}
                 autoFocus={false}
-                className="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
-                disabled={false}
+                className="MuiOutlinedInput-input MuiInputBase-input Mui-disabled MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+                disabled={true}
                 onAnimationStart={[Function]}
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -477,13 +477,13 @@ Array [
             data-testid="value-input"
           >
             <label
-              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-disabled MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink={true}
             >
               Gap
             </label>
             <div
-              className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+              className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-disabled MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
               onClick={[Function]}
             >
               <div
@@ -512,8 +512,8 @@ Array [
               <input
                 aria-invalid={false}
                 autoFocus={false}
-                className="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
-                disabled={false}
+                className="MuiOutlinedInput-input MuiInputBase-input Mui-disabled MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+                disabled={true}
                 onAnimationStart={[Function]}
                 onBlur={[Function]}
                 onChange={[Function]}

@@ -67,9 +67,9 @@ function fill(table, firstString, secondString, data) {
 
       table[i].push({
         value: min,
-        left: left <= min,
-        top: top <= min,
-        diag: diag <= min,
+        left: left === min,
+        top: top === min,
+        diag: diag === min,
       })
     }
   }
