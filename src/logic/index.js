@@ -9,6 +9,7 @@ const data = {
     {
       label: 'Levenshtein distance',
       calculate: ld,
+      disableWeights: true,
       matchWeight: 0,
       mismatchWeight: 1,
       gapWeight: 1,
@@ -24,27 +25,12 @@ const data = {
       label: 'Longest Common Subsequence',
       calculate: lcs,
       disableWeights: true,
+      matchWeight: 0,
+      mismatchWeight: 0,
+      gapWeight: 0,
     },
-    { label: 'Smith-Waterman', calculate: test },
+    // TODO: { label: 'Smith-Waterman' },
   ],
-}
-
-function test(data) {
-  let table = []
-  for (let i = 0; i < data.secondString.length; i++) {
-    table[i] = []
-    for (var j = 0; j < data.firstString.length; j++) {
-      table[i].push({
-        value: j,
-        left: false,
-        top: true,
-        diag: true,
-        isPath: true,
-      })
-    }
-  }
-
-  return table
 }
 
 export default data
