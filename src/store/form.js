@@ -20,12 +20,6 @@ export const form = createSlice({
       state.algorithm = action.payload
       const algorithm = logic.algorithms[state.algorithm]
       state.disableWeights = algorithm.disableWeights
-      if (algorithm.disableWeights) {
-        state.matchWeight = 0
-        state.mismatchWeight = 0
-        state.gapWeight = 0
-        return
-      }
       state.matchWeight = algorithm.matchWeight
       state.mismatchWeight = algorithm.mismatchWeight
       state.gapWeight = algorithm.gapWeight
