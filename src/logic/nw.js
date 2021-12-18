@@ -65,10 +65,6 @@ function fill(table, firstString, secondString, data) {
         max = diag
       }
 
-      if (max < 0) {
-        max = 0
-      }
-
       table[i].push({
         value: max,
         left: max === left,
