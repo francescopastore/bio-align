@@ -15,7 +15,6 @@ export default function FormInputNumber(props) {
     const value = e.target.value
     setValue(value)
     if (!isError(value) && !isNaN(value)) {
-      console.log(value)
       props.handle(parseInt(value))
     }
   }
