@@ -48,7 +48,7 @@ export default function FormInputString(props) {
               <IconButton
                 data-testid="shuffle-button"
                 onClick={() => {
-                  let value = shuffle(maxLength)
+                  let value = shuffle(4, maxLength)
                   changeValue(value)
                 }}
               >
@@ -62,10 +62,9 @@ export default function FormInputString(props) {
   )
 }
 
-function shuffle(maxLength) {
+function shuffle(minLength, maxLength) {
   let string = ''
-  let offset = maxLength / 2
-  let length = offset + Math.round(Math.random() * offset)
+  let length = minLength + Math.round(Math.random() * (maxLength - minLength))
 
   for (let i = 0; i < length; i++) {
     let rand = Math.round(Math.random() * 3)

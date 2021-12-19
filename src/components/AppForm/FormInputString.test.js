@@ -4,17 +4,17 @@ import renderer from 'react-test-renderer'
 
 import FormInputString from './FormInputString'
 
-const fakeHandleChange = () => {}
+const fakeHandle = () => {}
 const fakeLabel = 'test'
-const fakeDefaultValue = 'TEST'
+const fakeDefault = 'TEST'
 
 it('renders correctly', () => {
   const tree = renderer
     .create(
       <FormInputString
-        default={fakeDefaultValue}
+        default={fakeDefault}
         label={fakeLabel}
-        handle={fakeHandleChange}
+        handle={fakeHandle}
       ></FormInputString>
     )
     .toJSON()
@@ -24,26 +24,23 @@ it('renders correctly', () => {
 test('default value param', () => {
   render(
     <FormInputString
-      default={fakeDefaultValue}
+      default={fakeDefault}
       label={fakeLabel}
-      handle={fakeHandleChange}
+      handle={fakeHandle}
     ></FormInputString>
   )
 
   const input = screen.getByTestId('value-input').querySelector('input')
-  expect(input).toHaveValue(fakeDefaultValue)
+  expect(input).toHaveValue(fakeDefault)
 })
 
 test('handle change param', () => {
-  const newValue = 'TEST'
-  const fakeHandleChange = (value) => {
-    expect(value).toBe(newValue)
-  }
+  const newValue = 'TEST TEST'
   render(
     <FormInputString
-      default={fakeDefaultValue}
+      default={fakeDefault}
       label={fakeLabel}
-      handle={fakeHandleChange}
+      handle={fakeHandle}
     ></FormInputString>
   )
 
@@ -57,9 +54,9 @@ test('handle change param', () => {
 test('shuffle', () => {
   render(
     <FormInputString
-      default={fakeDefaultValue}
+      default={fakeDefault}
       label={fakeLabel}
-      handle={fakeHandleChange}
+      handle={fakeHandle}
     ></FormInputString>
   )
 
@@ -71,5 +68,5 @@ test('shuffle', () => {
   const input = screen.getByTestId('value-input').querySelector('input')
   expect(input).toBeInTheDocument()
 
-  expect(input.value).not.toEqual(fakeDefaultValue)
+  expect(input.value).not.toEqual(fakeDefault)
 })
