@@ -43,6 +43,7 @@ Array [
         </label>
         <div
           className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiSelect-root css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+          data-testid="value-input"
           onClick={[Function]}
         >
           <div
