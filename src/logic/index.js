@@ -17,6 +17,7 @@ const data = {
     {
       label: 'Needleman-Wunsch',
       calculate: nw,
+      disableWeights: false,
       matchWeight: 1,
       mismatchWeight: -1,
       gapWeight: -1,
