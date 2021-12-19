@@ -11,8 +11,9 @@ export default function FormSelectAlgorithm(props) {
   const [algorithm, setAlgorithm] = React.useState(props.default)
 
   const handle = (event) => {
-    setAlgorithm(event.target.value)
-    props.handle(event.target.value)
+    const value = event.target.value
+    setAlgorithm(value)
+    props.handle(value)
   }
 
   const options = props.options.map((v, i) => {
@@ -32,6 +33,7 @@ export default function FormSelectAlgorithm(props) {
         label="Algorithm"
         value={algorithm}
         onChange={handle}
+        data-testid="value-input"
         startAdornment={
           <InputAdornment position="start">
             <FunctionsIcon />
