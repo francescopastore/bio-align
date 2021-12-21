@@ -6,7 +6,7 @@ import Paper from '@mui/material/Paper'
 import Link from '@mui/material/Link'
 import GitHubIcon from '@mui/icons-material/GitHub'
 
-export default function AppForm() {
+export default function AppFooter() {
   const muiLink = (
     <Link underline="none" target="_blank" href="https://mui.com">
       MUI
