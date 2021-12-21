@@ -17,5 +17,5 @@ it('should render the letter given', () => {
   render(<AppTableLetter letter={fakeLetter}></AppTableLetter>)
 
   const div = screen.getByText(fakeLetter)
-  expect(div).toBeInTheDocument()
+  expect(div).toHaveTextContent(fakeLetter)
 })

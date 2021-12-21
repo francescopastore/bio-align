@@ -10,7 +10,7 @@ import AppTableCard from './AppTableCard'
 const backgroundCell = grey['A100']
 const backgroundPath = yellow['A200']
 
-export default function AppTableCell(props) {
+export default function AppTableNumber(props) {
   const cell = props.cell
   const fontSize = 24
   const backgroundColor = cell.isPath ? backgroundPath : backgroundCell
