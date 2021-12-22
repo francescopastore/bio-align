@@ -11,6 +11,10 @@ export default function FormInputString(props) {
   const maxLength = 8
   const [value, setValue] = React.useState(props.default)
 
+  React.useEffect(() => {
+    setValue(props.default)
+  }, [props.default])
+
   const handle = (e) => {
     const value = e.target.value.toUpperCase()
     changeValue(value)

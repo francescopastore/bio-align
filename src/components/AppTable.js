@@ -1,5 +1,6 @@
 import * as React from 'react'
 
+import IconButton from '@mui/material/IconButton'
 import Box from '@mui/material/Box'
 
 import AppTableLetter from './AppTable/AppTableLetter'
@@ -7,13 +8,18 @@ import AppTableNumber from './AppTable/AppTableNumber'
 
 import logic from '../logic'
 
-import { useSelector } from 'react-redux'
+import { setFirstString, setSecondString } from '../store/form'
+
+import { useSelector, useDispatch } from 'react-redux'
+
+import CachedIcon from '@mui/icons-material/Cached'
 
 export default function AppTable() {
+  const dispatch = useDispatch()
   const form = useSelector((state) => state.form)
   return (
     <Box sx={style.container}>
-      {generateTopHeader(form)}
+      {generateTopHeader(form, dispatch)}
       {generateTable(form)}
     </Box>
   )
@@ -47,9 +53,9 @@ function generateTable(form) {
   return table
 }
 
-function generateTopHeader(form) {
+function generateTopHeader(form, dispatch) {
   let row = []
-  row.push(generateHeaderCell('', 'hidden', true))
+  row.push(switchButton(form, dispatch))
   row.push(generateHeaderCell('-', 'top empty', false))
   for (let i = 0; i < form.secondString.length; i++) {
     row.push(generateHeaderCell(form.secondString[i], 'top' + i, false))
@@ -70,6 +76,36 @@ function generateHeaderCell(letter, key, isHidden) {
   return (
     <Box key={key} sx={sx}>
       <AppTableLetter letter={letter}></AppTableLetter>
+    </Box>
+  )
+}
+
+function switchButton(form, dispatch) {
+  return (
+    <Box
+      key="switchButton"
+      sx={{
+        p: 1,
+        width: 50,
+        height: 50,
+        mr: 2,
+        mb: 2,
+        alignItems: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+      }}
+    >
+      <IconButton
+        data-testid="shuffle-button"
+        onClick={() => {
+          const firstString = form.firstString
+          dispatch(setFirstString(form.secondString))
+          dispatch(setSecondString(firstString))
+        }}
+        size="large"
+      >
+        <CachedIcon></CachedIcon>
+      </IconButton>
     </Box>
   )
 }
