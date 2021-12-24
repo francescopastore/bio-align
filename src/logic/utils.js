@@ -28,19 +28,84 @@ function initialize(table, firstString, secondString, weight) {
   return table
 }
 
-// initializeWithZero for no left and top values and zero weight
+// initializeWithZero for zero weight
 function initializeWithZero(table, firstString, secondString) {
-  table = utils.initialize(table, firstString, secondString, 0)
+  table[0] = [
+    {
+      value: 0,
+    },
+  ]
 
+  // first row
   for (let i = 1; i < secondString.length; i++) {
-    delete table[0][i].left
+    table[0].push({
+      value: 0,
+    })
   }
 
+  // first column
   for (let i = 1; i < firstString.length; i++) {
-    delete table[i][0].top
+    table[i] = []
+    table[i].push({
+      value: 0,
+    })
   }
 
   return table
+}
+
+// traceback from the given start point only for nw type of algorithms
+function traceback(table, firstString, secondString) {
+  let i = firstString.length - 1
+  let j = secondString.length - 1
+  while (i !== 0 || j !== 0) {
+    table[i][j].isPath = true
+    if (table[i][j].diag) {
+      i--
+      j--
+    } else if (table[i][j].left) {
+      j--
+    } else {
+      i--
+    }
+  }
+  return table
+}
+
+// traceback from the given start point until zero, only for sw type of algorithms
+function tracebackToZero(table, row, col) {
+  while (table[row][col].value !== 0 && row !== 0 && col !== 0) {
+    table[row][col].isPath = true
+    if (table[row][col].diag) {
+      row--
+      col--
+    } else if (table[row][col].left) {
+      col--
+    } else {
+      row--
+    }
+  }
+  table[row][col].isPath = true
+  return table
+}
+
+// findMaxIndex for traceback
+function findMaxIndex(table, firstString, secondString, tableMax) {
+  let row = 0
+  let col = 0
+  for (let i = 1; i < firstString.length; i++) {
+    for (let j = 1; j < secondString.length; j++) {
+      if (table[i][j].value === tableMax) {
+        row = i
+        col = j
+        break
+      }
+    }
+    if (row !== 0) {
+      break
+    }
+  }
+  return { row, col }
 }
 
 // generatePrintableTable useful for debugging
@@ -59,6 +124,9 @@ const utils = {
   initialize,
   initializeWithZero,
   generatePrintableTable,
+  traceback,
+  tracebackToZero,
+  findMaxIndex,
 }
 
 export default utils

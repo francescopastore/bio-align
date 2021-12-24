@@ -11,7 +11,7 @@ export default function calculate(data) {
 
   table = fill(table, firstString, secondString, data)
 
-  table = traceback(table, firstString, secondString)
+  table = utils.traceback(table, firstString, secondString)
 
   return table
 }
@@ -43,25 +43,6 @@ function fill(table, firstString, secondString, data) {
         top: max === top,
         diag: max === diag,
       })
-    }
-  }
-
-  return table
-}
-
-function traceback(table, firstString, secondString) {
-  // traceback
-  let i = firstString.length - 1
-  let j = secondString.length - 1
-  while (i !== 0 || j !== 0) {
-    table[i][j].isPath = true
-    if (table[i][j].diag) {
-      i--
-      j--
-    } else if (table[i][j].left) {
-      j--
-    } else {
-      i--
     }
   }
 

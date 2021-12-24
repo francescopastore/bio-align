@@ -59,35 +59,12 @@ function fill(table, firstString, secondString, data) {
 }
 
 function traceback(table, firstString, secondString, tableMax) {
-  let row = 0
-  let col = 0
-
-  // search for max value index
-  for (let i = 1; i < firstString.length; i++) {
-    for (let j = 1; j < secondString.length; j++) {
-      if (table[i][j].value === tableMax) {
-        row = i
-        col = j
-        break
-      }
-    }
-    if (row !== 0) {
-      break
-    }
-  }
-
-  // traceback to find the path
-  while (table[row][col].value !== 0 && row !== 0 && col !== 0) {
-    table[row][col].isPath = true
-    if (table[row][col].diag) {
-      row--
-      col--
-    } else if (table[row][col].left) {
-      col--
-    } else {
-      row--
-    }
-  }
-  table[row][col].isPath = true
+  let { row, col } = utils.findMaxIndex(
+    table,
+    firstString,
+    secondString,
+    tableMax
+  )
+  utils.tracebackToZero(table, row, col)
   return table
 }
