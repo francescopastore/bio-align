@@ -1,41 +1,17 @@
+import utils from './utils'
+
 export default function calculate(data) {
   let table = []
 
   let firstString = '-' + data.firstString
   let secondString = '-' + data.secondString
 
-  table = initialize(table, firstString, secondString)
+  table = utils.initializeWithZero(table, firstString, secondString)
 
   let result = fill(table, firstString, secondString)
   table = result.table
 
   table = traceback(table, firstString, secondString, result.tableMax)
-
-  return table
-}
-
-function initialize(table, firstString, secondString) {
-  // initialization
-  table[0] = [
-    {
-      value: 0,
-    },
-  ]
-
-  // first row
-  for (let i = 1; i < secondString.length; i++) {
-    table[0].push({
-      value: 0,
-    })
-  }
-
-  // first column
-  for (let i = 1; i < firstString.length; i++) {
-    table[i] = []
-    table[i].push({
-      value: 0,
-    })
-  }
 
   return table
 }

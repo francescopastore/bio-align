@@ -5,9 +5,6 @@ const tests = [
     data: {
       firstString: 'GTGT',
       secondString: 'ATTC',
-      matchWeight: 0,
-      mismatchWeight: 1,
-      gapWeight: 1,
     },
     expected: [
       [

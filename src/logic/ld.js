@@ -1,45 +1,17 @@
+import utils from './utils'
+
 export default function calculate(data) {
   let table = []
 
   let firstString = '-' + data.firstString
   let secondString = '-' + data.secondString
 
-  table = initialize(table, firstString, secondString, data.gapWeight)
+  table = utils.initialize(table, firstString, secondString, 1)
+  table[0][0].isPath = true
 
   table = fill(table, firstString, secondString, data)
 
   table = traceback(table, firstString, secondString)
-
-  return table
-}
-
-function initialize(table, firstString, secondString, gapWeight) {
-  // initialization
-  table[0] = [
-    {
-      value: 0,
-      isPath: true,
-    },
-  ]
-
-  // first row
-  for (let i = 1; i < secondString.length; i++) {
-    let value = gapWeight + table[0][i - 1].value
-    table[0].push({
-      value: value,
-      left: true,
-    })
-  }
-
-  // first column
-  for (let i = 1; i < firstString.length; i++) {
-    table[i] = []
-    let value = gapWeight + table[i - 1][0].value
-    table[i].push({
-      value: value,
-      top: true,
-    })
-  }
 
   return table
 }
