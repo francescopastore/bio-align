@@ -109,6 +109,6 @@ function traceback(table, firstString, secondString, tableMax) {
       row--
     }
   }
-
+  table[row][col].isPath = true
   return table
 }
