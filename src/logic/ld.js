@@ -6,7 +6,7 @@ export default function calculate(data) {
   let firstString = '-' + data.firstString
   let secondString = '-' + data.secondString
 
-  table = utils.initialize(table, firstString, secondString, 1)
+  table = utils.initialize(table, firstString.length, secondString.length, 1)
   table[0][0].isPath = true
 
   table = fill(table, firstString, secondString, data)

@@ -6,12 +6,16 @@ export default function calculate(data) {
   let firstString = '-' + data.firstString
   let secondString = '-' + data.secondString
 
-  table = utils.initializeWithZero(table, firstString, secondString)
+  table = utils.initializeWithZero(
+    table,
+    firstString.length,
+    secondString.length
+  )
 
   let result = fill(table, firstString, secondString, data)
   table = result.table
 
-  table = traceback(table, firstString, secondString, result.tableMax)
+  table = traceback(table, result.tableMax)
 
   return table
 }

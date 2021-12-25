@@ -1,5 +1,5 @@
 // initialize matrix with the given weight
-function initialize(table, firstString, secondString, weight) {
+function initialize(table, numRows, numCols, weight) {
   table[0] = [
     {
       value: 0,
@@ -7,7 +7,7 @@ function initialize(table, firstString, secondString, weight) {
   ]
 
   // first row
-  for (let i = 1; i < secondString.length; i++) {
+  for (let i = 1; i < numCols; i++) {
     let value = table[0][i - 1].value + weight
     table[0].push({
       value: value,
@@ -16,7 +16,7 @@ function initialize(table, firstString, secondString, weight) {
   }
 
   // first column
-  for (let i = 1; i < firstString.length; i++) {
+  for (let i = 1; i < numRows; i++) {
     table[i] = []
     let value = table[i - 1][0].value + weight
     table[i].push({
@@ -29,7 +29,7 @@ function initialize(table, firstString, secondString, weight) {
 }
 
 // initializeWithZero for zero weight
-function initializeWithZero(table, firstString, secondString) {
+function initializeWithZero(table, numRows, numCols) {
   table[0] = [
     {
       value: 0,
@@ -37,14 +37,14 @@ function initializeWithZero(table, firstString, secondString) {
   ]
 
   // first row
-  for (let i = 1; i < secondString.length; i++) {
+  for (let i = 1; i < numCols; i++) {
     table[0].push({
       value: 0,
     })
   }
 
   // first column
-  for (let i = 1; i < firstString.length; i++) {
+  for (let i = 1; i < numRows; i++) {
     table[i] = []
     table[i].push({
       value: 0,
@@ -55,9 +55,9 @@ function initializeWithZero(table, firstString, secondString) {
 }
 
 // traceback from the given start point only for nw type of algorithms
-function traceback(table, firstString, secondString) {
-  let i = firstString.length - 1
-  let j = secondString.length - 1
+function traceback(table) {
+  let i = table.length - 1
+  let j = table[0].length - 1
   while (i !== 0 || j !== 0) {
     table[i][j].isPath = true
     if (table[i][j].diag) {
@@ -69,6 +69,7 @@ function traceback(table, firstString, secondString) {
       i--
     }
   }
+  table[i][j].isPath = true
   return table
 }
 
@@ -90,11 +91,11 @@ function tracebackToZero(table, row, col) {
 }
 
 // findMaxIndex for traceback
-function findMaxIndex(table, firstString, secondString, tableMax) {
+function findMaxIndex(table, tableMax) {
   let row = 0
   let col = 0
-  for (let i = 1; i < firstString.length; i++) {
-    for (let j = 1; j < secondString.length; j++) {
+  for (let i = 1; i < table.length; i++) {
+    for (let j = 1; j < table[0].length; j++) {
       if (table[i][j].value === tableMax) {
         row = i
         col = j
@@ -109,10 +110,13 @@ function findMaxIndex(table, firstString, secondString, tableMax) {
 }
 
 // generatePrintableTable useful for debugging
-function generatePrintableTable(firstString, secondString, table) {
+function generatePrintableTable(table) {
   let str = ''
-  for (let i = 0; i < firstString.length + 1; i++) {
-    for (let j = 0; j < secondString.length + 1; j++) {
+  if (table.length === 0) {
+    return 'No data'
+  }
+  for (let i = 0; i < table.length; i++) {
+    for (let j = 0; j < table[0].length; j++) {
       str += table[i][j].value + ' '
     }
     str += '\n'
@@ -123,10 +127,10 @@ function generatePrintableTable(firstString, secondString, table) {
 const utils = {
   initialize,
   initializeWithZero,
-  generatePrintableTable,
   traceback,
   tracebackToZero,
   findMaxIndex,
+  generatePrintableTable,
 }
 
 export default utils
