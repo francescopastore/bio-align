@@ -12,7 +12,7 @@ const backgroundPath = yellow['A200']
 
 export default function AppTableNumber(props) {
   const cell = props.cell
-  const fontSize = 24
+  const fontSize = chooseBestFontSize(cell.value)
   const backgroundColor = cell.isPath ? backgroundPath : backgroundCell
   return (
     <AppTableCard backgroundColor={backgroundColor}>
@@ -20,28 +20,34 @@ export default function AppTableNumber(props) {
         <ArrowUpwardIcon
           sx={{
             transform: 'rotate(-45deg)',
-            fontSize,
+            ...style.arrow,
             visibility: visibility(cell.diag),
           }}
         ></ArrowUpwardIcon>
         <ArrowUpwardIcon
-          sx={{ fontSize, visibility: visibility(cell.top) }}
+          sx={{ ...style.arrow, visibility: visibility(cell.top) }}
         ></ArrowUpwardIcon>
         <ArrowBackIcon
-          sx={{ fontSize, visibility: visibility(cell.left) }}
+          sx={{ ...style.arrow, visibility: visibility(cell.left) }}
         ></ArrowBackIcon>
-        <Typography variant="h6">{cell.value}</Typography>
+        <Typography sx={{ fontSize, ...style.number }}>{cell.value}</Typography>
       </Box>
     </AppTableCard>
   )
 }
 
-function visibility(value) {
-  if (value) {
-    return 'visible'
-  } else {
-    return 'hidden'
+function visibility(isVisible) {
+  return isVisible ? 'visible' : 'hidden'
+}
+
+function chooseBestFontSize(value) {
+  const abs = Math.abs(value)
+  if (abs >= 100) {
+    return 14
+  } else if (abs >= 10) {
+    return 16
   }
+  return 20
 }
 
 const style = {
@@ -49,5 +55,11 @@ const style = {
     display: 'flex',
     justifyContent: 'space-around',
     flexWrap: 'wrap',
+  },
+  number: {
+    fontWeight: 'bold',
+  },
+  arrow: {
+    fontSize: 24,
   },
 }
