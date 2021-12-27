@@ -17,14 +17,14 @@ export default function App() {
     <>
       <Grid container spacing={2} sx={style.container}>
         <Grid item sx={offset(theme)} lg></Grid>
-        <Grid item xs={12} md={4} lg={3}>
+        <Grid item xs={12} md={4} lg={3} sx={style.centered}>
           <Paper sx={style.main} elevation={4}>
             <AppHeader></AppHeader>
             <AppForm></AppForm>
           </Paper>
         </Grid>
         <Grid item sx={offset(theme)} lg></Grid>
-        <Grid item xs={12} md={8} lg={6}>
+        <Grid item xs={12} md={8} lg={6} sx={style.centered}>
           <AppTable></AppTable>
         </Grid>
         <Grid item sx={offset(theme)} lg></Grid>
@@ -44,18 +44,15 @@ const offset = (theme) => ({
 
 const style = {
   container: {
-    paddingTop: '10vh',
     minHeight: '100vh',
+  },
+  centered: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   main: {
     p: 3,
-  },
-  header: {
-    width: '15vw',
-    margin: 'auto',
-  },
-  form: {
-    mt: 6,
   },
   footer: {
     paddingBottom: '3vh',

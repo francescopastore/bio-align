@@ -12,11 +12,13 @@ const muiLink = (
     MUI
   </Link>
 )
+
 const reactLink = (
   <Link underline="none" target="_blank" href="https://reactjs.org/">
     React.js
   </Link>
 )
+
 // using link to avoid bad p nesting
 const heart = (
   <Link underline="none" display="inline" color="red">

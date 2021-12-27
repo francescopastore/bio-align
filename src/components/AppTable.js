@@ -21,10 +21,8 @@ export default function AppTable() {
   const form = useSelector((state) => state.form)
   return (
     <Box sx={style.container}>
-      <Box>
-        {generateTopHeader(form, dispatch)}
-        {generateTable(form)}
-      </Box>
+      {generateTopHeader(form, dispatch)}
+      {generateTable(form)}
     </Box>
   )
 }
@@ -108,9 +106,6 @@ const style = {
   container: {
     overflow: 'auto',
     my: 3,
-    alignItems: 'center',
-    justifyContent: 'center',
-    display: 'flex',
   },
   row: {
     display: 'flex',
