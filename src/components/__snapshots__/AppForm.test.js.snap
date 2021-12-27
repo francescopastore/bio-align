@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-1rnkv3u-MuiPaper-root"
->
+Array [
   <div
     className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-1iledgx-MuiFormControl-root"
   >
@@ -91,7 +89,7 @@ exports[`renders correctly 1`] = `
         </legend>
       </fieldset>
     </div>
-  </div>
+  </div>,
   <div
     className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-1iledgx-MuiFormControl-root"
   >
@@ -196,7 +194,7 @@ exports[`renders correctly 1`] = `
       </div>
       
     </div>
-  </div>
+  </div>,
   <div
     className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-1iledgx-MuiFormControl-root"
   >
@@ -301,7 +299,7 @@ exports[`renders correctly 1`] = `
       </div>
       
     </div>
-  </div>
+  </div>,
   <div
     className="MuiBox-root css-1bnxa12"
   >
@@ -512,11 +510,11 @@ exports[`renders correctly 1`] = `
         
       </div>
     </div>
-  </div>
+  </div>,
   <span
     className="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
   >
     Only weights between -10 and 10 are allowed
-  </span>
-</div>
+  </span>,
+]
 `;

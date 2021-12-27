@@ -2,19 +2,19 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-1rnkv3u-MuiPaper-root"
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-11mde6h-MuiPaper-root"
 >
   <div
-    className="MuiBox-root css-1j9zy8k"
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-1hcdisa-MuiGrid-root"
   >
     <div
-      className="MuiBox-root css-0"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-0 MuiGrid-grid-lg-4 css-gi2auw-MuiGrid-root"
     />
     <div
-      className="MuiBox-root css-xi606m"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 MuiGrid-grid-lg-4 css-24gdwv-MuiGrid-root"
     >
       <p
-        className="MuiTypography-root MuiTypography-body1 css-f46jb1-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
       >
         Made with 
         <a
@@ -47,7 +47,7 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="MuiBox-root css-s2uf1z"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-lg-4 css-lfcec4-MuiGrid-root"
     >
       <svg
         aria-hidden={true}

@@ -2,18 +2,11 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-13qyio5-MuiPaper-root"
+  className="MuiBox-root css-co4xce"
 >
   <img
     alt="header"
     src="/header.png"
-    style={
-      Object {
-        "height": "100%",
-        "objectFit": "contain",
-        "width": "100%",
-      }
-    }
   />
 </div>
 `;
