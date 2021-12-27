@@ -6,24 +6,24 @@ import Paper from '@mui/material/Paper'
 import Link from '@mui/material/Link'
 import GitHubIcon from '@mui/icons-material/GitHub'
 
-export default function AppFooter() {
-  const muiLink = (
-    <Link underline="none" target="_blank" href="https://mui.com">
-      MUI
-    </Link>
-  )
-  const reactLink = (
-    <Link underline="none" target="_blank" href="https://reactjs.org/">
-      React.js
-    </Link>
-  )
-  // using link to avoid bad p nesting
-  const heart = (
-    <Link underline="none" display="inline" color="red">
-      ♥
-    </Link>
-  )
+const muiLink = (
+  <Link underline="none" target="_blank" href="https://mui.com">
+    MUI
+  </Link>
+)
+const reactLink = (
+  <Link underline="none" target="_blank" href="https://reactjs.org/">
+    React.js
+  </Link>
+)
+// using link to avoid bad p nesting
+const heart = (
+  <Link underline="none" display="inline" color="red">
+    ♥
+  </Link>
+)
 
+export default function AppFooter() {
   return (
     <Paper sx={style.container} elevation={4}>
       <Box sx={style.inner}>

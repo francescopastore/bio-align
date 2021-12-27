@@ -26,7 +26,7 @@ export default function AppForm() {
   // change here default values
   const data = useSelector((state) => state.form)
   return (
-    <Paper sx={style.container} elevation={4}>
+    <>
       <FormSelectAlgorithm
         options={logic.algorithms}
         default={0}
@@ -67,12 +67,6 @@ export default function AppForm() {
       <Typography variant="caption">
         Only weights between -10 and 10 are allowed
       </Typography>
-    </Paper>
+    </>
   )
-}
-
-const style = {
-  container: {
-    p: 3,
-  },
 }
