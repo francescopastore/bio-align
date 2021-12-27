@@ -7,11 +7,17 @@ import reportWebVitals from './reportWebVitals'
 import { store } from './store'
 import { Provider } from 'react-redux'
 
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+
+const theme = createTheme({})
+
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <ThemeProvider theme={theme}>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

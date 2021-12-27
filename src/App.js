@@ -9,21 +9,25 @@ import AppForm from './components/AppForm.js'
 import AppTable from './components/AppTable.js'
 import AppFooter from './components/AppFooter.js'
 
-function App() {
+import { useTheme } from '@mui/material/styles'
+
+export default function App() {
+  const theme = useTheme()
   return (
     <>
       <Grid container spacing={2} sx={style.container}>
-        <Grid item lg></Grid>
-        <Grid item lg={3}>
+        <Grid item sx={offset(theme)} lg></Grid>
+        <Grid item xs={12} md={4} lg={3}>
           <Paper sx={style.main} elevation={4}>
             <AppHeader></AppHeader>
             <AppForm></AppForm>
           </Paper>
         </Grid>
-        <Grid item lg></Grid>
-        <Grid item lg={7}>
+        <Grid item sx={offset(theme)} lg></Grid>
+        <Grid item xs={12} md={8} lg={6}>
           <AppTable></AppTable>
         </Grid>
+        <Grid item sx={offset(theme)} lg></Grid>
       </Grid>
       <Box sx={style.footer}>
         <AppFooter></AppFooter>
@@ -31,6 +35,12 @@ function App() {
     </>
   )
 }
+
+const offset = (theme) => ({
+  [theme.breakpoints.down('lg')]: {
+    display: 'none',
+  },
+})
 
 const style = {
   container: {
@@ -53,5 +63,3 @@ const style = {
     paddingRight: '5vw',
   },
 }
-
-export default App
