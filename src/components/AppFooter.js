@@ -1,9 +1,10 @@
 import * as React from 'react'
 
-import Box from '@mui/material/Box'
+import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
 import Link from '@mui/material/Link'
+
 import GitHubIcon from '@mui/icons-material/GitHub'
 
 const muiLink = (
@@ -25,18 +26,18 @@ const heart = (
 
 export default function AppFooter() {
   return (
-    <Paper sx={style.container} elevation={4}>
-      <Box sx={style.inner}>
-        <Box></Box>
-        <Box sx={style.center}>
+    <Paper elevation={4}>
+      <Grid container sx={style.container}>
+        <Grid item lg={4} xs={0}></Grid>
+        <Grid item lg={4} xs={11} sx={style.center}>
           <Typography sx={style.text}>
             Made with {heart} using {reactLink} and {muiLink}
           </Typography>
-        </Box>
-        <Box sx={style.right}>
+        </Grid>
+        <Grid item lg={4} xs={1} sx={style.right}>
           <GitHubIcon sx={style.icon} fontSize="large" onClick={openGithub} />
-        </Box>
-      </Box>
+        </Grid>
+      </Grid>
     </Paper>
   )
 }
@@ -47,14 +48,8 @@ function openGithub() {
 
 const style = {
   container: {
-    p: 3,
-  },
-  inner: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-  },
-  text: {
-    lineHeight: '5vh',
+    p: 4,
+    alignItems: 'center',
   },
   icon: {
     cursor: 'pointer',
