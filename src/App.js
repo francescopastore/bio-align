@@ -8,6 +8,7 @@ import AppHeader from './components/AppHeader.js'
 import AppForm from './components/AppForm.js'
 import AppTable from './components/AppTable.js'
 import AppFooter from './components/AppFooter.js'
+import AppStringsMatch from './components/AppStringsMatch.js'
 
 import { useTheme } from '@mui/material/styles'
 
@@ -22,6 +23,7 @@ export default function App() {
             <AppHeader></AppHeader>
             <AppForm></AppForm>
           </Paper>
+          <AppStringsMatch></AppStringsMatch>
         </Grid>
         <Grid item sx={offset(theme)} lg></Grid>
         <Grid item xs={12} md={8} lg={6} sx={style.centered}>
@@ -48,6 +50,7 @@ const style = {
   },
   centered: {
     display: 'flex',
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
   },
