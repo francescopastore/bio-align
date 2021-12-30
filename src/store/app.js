@@ -8,17 +8,13 @@ const defaultData = {
   algorithm: 0,
   firstString: 'ATTACTC',
   secondString: 'ATATGTC',
-  disableWeights: defaultAlgorithm.disableWeights,
-  matchWeight: defaultAlgorithm.matchWeight,
-  mismatchWeight: defaultAlgorithm.mismatchWeight,
-  gapWeight: defaultAlgorithm.gapWeight,
+  ...defaultAlgorithm.defaultData,
 }
 
 const initialState = {
-  data: {
-    ...defaultData,
-  },
+  form: defaultData,
   solution: defaultAlgorithm.calculate(defaultData),
+  stringsMatch: defaultAlgorithm.stringsMatch(defaultData),
 }
 
 export const app = createSlice({
@@ -26,28 +22,37 @@ export const app = createSlice({
   initialState,
   reducers: {
     setAlgorithm: (state, action) => {
-      const algorithm = action.payload
-      state.algorithm = algorithm
-      state.data = Object.assign(state.data, logic.algorithms[algorithm])
-      state.solution = logic.algorithms[algorithm].calculate(state.data)
+      state.form.algorithm = action.payload
+      const algorithm = logic.algorithms[state.form.algorithm]
+      state.form = Object.assign(state.form, algorithm.defaultData)
+      state.solution = recalculate(state)
     },
     setFirstString: (state, action) => {
-      state.data.firstString = action.payload
+      state.form.firstString = action.payload
+      state.solution = recalculate(state)
     },
     setSecondString: (state, action) => {
-      state.data.secondString = action.payload
+      state.form.secondString = action.payload
+      state.solution = recalculate(state)
     },
     setMatchWeight: (state, action) => {
-      state.data.matchWeight = action.payload
+      state.form.matchWeight = action.payload
+      state.solution = recalculate(state)
     },
     setMismatchWeight: (state, action) => {
-      state.data.mismatchWeight = action.payload
+      state.form.mismatchWeight = action.payload
+      state.solution = recalculate(state)
     },
     setGapWeight: (state, action) => {
-      state.data.gapWeight = action.payload
+      state.form.gapWeight = action.payload
+      state.solution = recalculate(state)
     },
   },
 })
+
+function recalculate(state) {
+  return logic.algorithms[state.form.algorithm].calculate(state.form)
+}
 
 export const {
   setAlgorithm,

@@ -23,7 +23,7 @@ import {
 export default function AppForm() {
   const dispatch = useDispatch()
   // change here default values
-  const data = useSelector((state) => state.app.data)
+  const data = useSelector((state) => state.app.form)
   return (
     <>
       <FormSelectAlgorithm

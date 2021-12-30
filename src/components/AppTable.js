@@ -16,20 +16,20 @@ import { amber } from '@mui/material/colors'
 
 export default function AppTable() {
   const dispatch = useDispatch()
-  const appData = useSelector((state) => state.app)
+  const form = useSelector((state) => state.app.form)
+  const solution = useSelector((state) => state.app.solution)
   return (
     <Box sx={style.container}>
-      {generateTopHeader(appData, dispatch)}
-      {generateTable(appData)}
+      {generateTopHeader(form, dispatch)}
+      {generateTable(form, solution)}
     </Box>
   )
 }
 
-function generateTable(app) {
-  const solution = app.solution
+function generateTable(form, solution) {
   let table = []
 
-  let string = '-' + app.data.firstString
+  let string = '-' + form.firstString
 
   for (let i = 0; i < string.length; i++) {
     let tableRow = []
@@ -53,12 +53,12 @@ function generateTable(app) {
   return table
 }
 
-function generateTopHeader(app, dispatch) {
+function generateTopHeader(form, dispatch) {
   let row = []
-  row.push(switchButton(app, dispatch))
+  row.push(switchButton(form, dispatch))
   row.push(generateHeaderCell('-', 'top empty', false))
-  for (let i = 0; i < app.data.secondString.length; i++) {
-    row.push(generateHeaderCell(app.data.secondString[i], 'top' + i, false))
+  for (let i = 0; i < form.secondString.length; i++) {
+    row.push(generateHeaderCell(form.secondString[i], 'top' + i, false))
   }
   const header = (
     <Box key={'top'} sx={style.row}>
@@ -80,15 +80,15 @@ function generateHeaderCell(letter, key, isHidden) {
   )
 }
 
-function switchButton(app, dispatch) {
+function switchButton(form, dispatch) {
   return (
     <Box key="switchButton">
       <AppTableCard backgroundColor={amber['A200']}>
         <IconButton
           data-testid="shuffle-button"
           onClick={() => {
-            const firstString = app.data.firstString
-            dispatch(setFirstString(app.data.secondString))
+            const firstString = form.firstString
+            dispatch(setFirstString(form.secondString))
             dispatch(setSecondString(firstString))
           }}
           size="large"
