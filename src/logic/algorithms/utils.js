@@ -86,7 +86,6 @@ function tracebackToZero(table, row, col) {
       row--
     }
   }
-  table[row][col].isPath = true
   return table
 }
 

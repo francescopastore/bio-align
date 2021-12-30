@@ -11,38 +11,45 @@ const colorMatch = green['A700']
 const colorGap = amber['A700']
 
 export default function AppStringsMatch() {
-  const stringsMatch = useSelector((state) => state.app.stringsMatch)
+  const data = useSelector((state) => state.app.stringsMatch)
   const firstString = []
   const secondString = []
-  for (let i = 0; i < stringsMatch.firstString.length; i++) {
-    if (stringsMatch.firstString[i] === stringsMatch.secondString[i]) {
-      const letter = generateLetter(stringsMatch.firstString[i], colorMatch, i)
+  for (let i = 0; i < data.firstString.length; i++) {
+    if (data.firstString[i] === data.secondString[i]) {
+      const letter = generateLetter(data.firstString[i], colorMatch, i)
       firstString.push(letter)
       secondString.push(letter)
-    } else if (stringsMatch.firstString[i] === '-') {
-      const letter = generateLetter(stringsMatch.secondString[i], colorGap, i)
+    } else if (data.firstString[i] === '-') {
+      const letter = generateLetter(data.secondString[i], colorGap, i)
       const letterGap = generateLetter('-', colorGap, i)
       firstString.push(letterGap)
       secondString.push(letter)
-    } else if (stringsMatch.secondString[i] === '-') {
-      const letter = generateLetter(stringsMatch.firstString[i], colorGap, i)
+    } else if (data.secondString[i] === '-') {
+      const letter = generateLetter(data.firstString[i], colorGap, i)
       const letterGap = generateLetter('-', colorGap, i)
       firstString.push(letter)
       secondString.push(letterGap)
     } else {
-      firstString.push(
-        generateLetter(stringsMatch.firstString[i], colorMismatch, i)
-      )
-      secondString.push(
-        generateLetter(stringsMatch.secondString[i], colorMismatch, i)
-      )
+      firstString.push(generateLetter(data.firstString[i], colorMismatch, i))
+      secondString.push(generateLetter(data.secondString[i], colorMismatch, i))
     }
   }
 
   return (
     <Paper sx={style.container} elevation={4}>
-      <Grid container>{firstString}</Grid>
-      <Grid container>{secondString}</Grid>
+      <Grid container spacing={0}>
+        <Grid container item spacing={0} xs={10}>
+          <Grid container item spacing={0} sx={style.centered}>
+            {firstString}
+          </Grid>
+          <Grid container item spacing={0} sx={style.centered}>
+            {secondString}
+          </Grid>
+        </Grid>
+        <Grid item sx={style.centered} xs={2}>
+          <Typography sx={style.score}>{data.score}</Typography>
+        </Grid>
+      </Grid>
     </Paper>
   )
 }
@@ -66,5 +73,14 @@ const style = {
     fontSize: '1.5em',
     letterSpacing: '0.5em',
     fontFamily: 'Courier New',
+  },
+  score: {
+    fontSize: '1.5em',
+    fontFamily: 'Courier New',
+  },
+  centered: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 }

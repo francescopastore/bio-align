@@ -1,7 +1,7 @@
 export default function stringsMatch(form, solution) {
   let row, col
-  const firstString = form.firstString
-  const secondString = form.secondString
+  const firstString = '-' + form.firstString
+  const secondString = '-' + form.secondString
 
   for (let i = 1; i < firstString.length; i++) {
     for (let j = 1; j < secondString.length; j++) {
@@ -15,15 +15,17 @@ export default function stringsMatch(form, solution) {
   let stringsMatch = {
     firstString: '',
     secondString: '',
+    score: solution[row][col].value,
   }
 
-  while (row >= 0 && col >= 0 && solution[row][col].isPath) {
-    if (solution[row][col].diag || (row === 0 && col === 0)) {
+  while (row > 0 && col > 0 && solution[row][col].isPath) {
+    const curr = solution[row][col]
+    if (curr.diag || (row === 0 && col === 0) || (!curr.left && !curr.top)) {
       stringsMatch.firstString = firstString[row] + stringsMatch.firstString
       stringsMatch.secondString = secondString[col] + stringsMatch.secondString
       row--
       col--
-    } else if (solution[row][col].left) {
+    } else if (curr.left) {
       stringsMatch.firstString = '-' + stringsMatch.firstString
       stringsMatch.secondString = secondString[col] + stringsMatch.secondString
       col--
@@ -32,6 +34,18 @@ export default function stringsMatch(form, solution) {
       stringsMatch.secondString = '-' + stringsMatch.secondString
       row--
     }
+  }
+
+  while (row > 0 && solution[row][col].isPath) {
+    stringsMatch.firstString = firstString[row] + stringsMatch.firstString
+    stringsMatch.secondString = '-' + stringsMatch.secondString
+    row--
+  }
+
+  while (col > 0 && solution[row][col].isPath) {
+    stringsMatch.firstString = '-' + stringsMatch.firstString
+    stringsMatch.secondString = secondString[col] + stringsMatch.secondString
+    col--
   }
 
   return stringsMatch
