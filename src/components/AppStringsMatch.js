@@ -20,17 +20,24 @@ export default function AppStringsMatch() {
   }
   const firstString = []
   const secondString = []
-
   for (let i = 0; i < match.firstString.length; i++) {
     if (match.firstString[i] === match.secondString[i]) {
-      firstString.push(generateMatchLetter(match.firstString[i]))
-      secondString.push(generateMatchLetter(match.secondString[i]))
-    } else if (match.firstString[i] === '-' || match.secondString[i] === '-') {
-      firstString.push(generateGapLetter(match.firstString[i]))
-      secondString.push(generateGapLetter(match.secondString[i]))
+      const letter = generateLetter(match.firstString[i], colorMatch, i)
+      firstString.push(letter)
+      secondString.push(letter)
+    } else if (match.firstString[i] === '-') {
+      const letter = generateLetter(match.secondString[i], colorGap, i)
+      const letterGap = generateLetter('-', colorGap, i)
+      firstString.push(letterGap)
+      secondString.push(letter)
+    } else if (match.secondString[i] === '-') {
+      const letter = generateLetter(match.firstString[i], colorGap, i)
+      const letterGap = generateLetter('-', colorGap, i)
+      firstString.push(letter)
+      secondString.push(letterGap)
     } else {
-      firstString.push(generateMismatchLetter(match.firstString[i]))
-      secondString.push(generateMismatchLetter(match.secondString[i]))
+      firstString.push(generateLetter(match.firstString[i], colorMismatch, i))
+      secondString.push(generateLetter(match.secondString[i], colorMismatch, i))
     }
   }
 
@@ -42,21 +49,9 @@ export default function AppStringsMatch() {
   )
 }
 
-function generateMatchLetter(letter) {
-  return generateLetter(letter, colorMatch)
-}
-
-function generateMismatchLetter(letter) {
-  return generateLetter(letter, colorMismatch)
-}
-
-function generateGapLetter(letter) {
-  return generateLetter(letter, colorGap)
-}
-
-function generateLetter(letter, color) {
+function generateLetter(letter, color, index) {
   return (
-    <Grid item>
+    <Grid item key={index}>
       <Typography color={color} sx={style.letter}>
         {letter}
       </Typography>

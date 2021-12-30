@@ -8,9 +8,7 @@ import AppTableLetter from './AppTable/AppTableLetter'
 import AppTableNumber from './AppTable/AppTableNumber'
 import AppTableCard from './AppTable/AppTableCard'
 
-import logic from '../logic'
-
-import { setFirstString, setSecondString } from '../store/form'
+import { setFirstString, setSecondString } from '../store/app'
 
 import { useSelector, useDispatch } from 'react-redux'
 
@@ -18,29 +16,29 @@ import { amber } from '@mui/material/colors'
 
 export default function AppTable() {
   const dispatch = useDispatch()
-  const form = useSelector((state) => state.form)
+  const appData = useSelector((state) => state.app)
   return (
     <Box sx={style.container}>
-      {generateTopHeader(form, dispatch)}
-      {generateTable(form)}
+      {generateTopHeader(appData, dispatch)}
+      {generateTable(appData)}
     </Box>
   )
 }
 
-function generateTable(form) {
-  const data = logic.algorithms[form.algorithm].calculate(form)
+function generateTable(app) {
+  const solution = app.solution
   let table = []
 
-  let string = '-' + form.firstString
+  let string = '-' + app.data.firstString
 
   for (let i = 0; i < string.length; i++) {
     let tableRow = []
     tableRow.push(generateHeaderCell(string[i], 'left' + i, false))
 
-    for (let j = 0; j < data[i].length; j++) {
+    for (let j = 0; j < solution[i].length; j++) {
       tableRow.push(
         <Box key={j}>
-          <AppTableNumber cell={data[i][j]}></AppTableNumber>
+          <AppTableNumber cell={solution[i][j]}></AppTableNumber>
         </Box>
       )
     }
@@ -55,12 +53,12 @@ function generateTable(form) {
   return table
 }
 
-function generateTopHeader(form, dispatch) {
+function generateTopHeader(app, dispatch) {
   let row = []
-  row.push(switchButton(form, dispatch))
+  row.push(switchButton(app, dispatch))
   row.push(generateHeaderCell('-', 'top empty', false))
-  for (let i = 0; i < form.secondString.length; i++) {
-    row.push(generateHeaderCell(form.secondString[i], 'top' + i, false))
+  for (let i = 0; i < app.data.secondString.length; i++) {
+    row.push(generateHeaderCell(app.data.secondString[i], 'top' + i, false))
   }
   const header = (
     <Box key={'top'} sx={style.row}>
@@ -82,15 +80,15 @@ function generateHeaderCell(letter, key, isHidden) {
   )
 }
 
-function switchButton(form, dispatch) {
+function switchButton(app, dispatch) {
   return (
     <Box key="switchButton">
       <AppTableCard backgroundColor={amber['A200']}>
         <IconButton
           data-testid="shuffle-button"
           onClick={() => {
-            const firstString = form.firstString
-            dispatch(setFirstString(form.secondString))
+            const firstString = app.data.firstString
+            dispatch(setFirstString(app.data.secondString))
             dispatch(setSecondString(firstString))
           }}
           size="large"

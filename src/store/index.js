@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
 
-import formReducer from './form'
+import appReducer from './app'
 
 export const store = configureStore({
   reducer: {
-    form: formReducer,
+    app: appReducer,
   },
 })

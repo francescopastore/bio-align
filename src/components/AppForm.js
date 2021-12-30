@@ -18,12 +18,12 @@ import {
   setMatchWeight,
   setMismatchWeight,
   setGapWeight,
-} from '../store/form'
+} from '../store/app'
 
 export default function AppForm() {
   const dispatch = useDispatch()
   // change here default values
-  const data = useSelector((state) => state.form)
+  const data = useSelector((state) => state.app.data)
   return (
     <>
       <FormSelectAlgorithm
