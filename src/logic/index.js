@@ -1,3 +1,5 @@
+import stringsMatch from './stringsMatch'
+
 import ld from './algorithms/ld'
 import nw from './algorithms/nw'
 import lcs from './algorithms/lcs'
@@ -6,11 +8,12 @@ import sw from './algorithms/sw'
 // list of algorithm available
 // each algorithm has a label and a calculate function
 const data = {
+  stringsMatch,
   algorithms: [
     {
       label: 'Levenshtein distance',
       calculate: ld,
-      defaultData: {
+      defaultForm: {
         disableWeights: true,
         matchWeight: 0,
         mismatchWeight: 1,
@@ -20,7 +23,7 @@ const data = {
     {
       label: 'Needleman-Wunsch',
       calculate: nw,
-      defaultData: {
+      defaultForm: {
         disableWeights: false,
         matchWeight: 1,
         mismatchWeight: -1,
@@ -30,7 +33,7 @@ const data = {
     {
       label: 'Longest Common Subsequence',
       calculate: lcs,
-      defaultData: {
+      defaultForm: {
         disableWeights: true,
         matchWeight: 0,
         mismatchWeight: 0,
@@ -40,7 +43,7 @@ const data = {
     {
       label: 'Smith-Waterman',
       calculate: sw,
-      defaultData: {
+      defaultForm: {
         disableWeights: false,
         matchWeight: 1,
         mismatchWeight: -1,

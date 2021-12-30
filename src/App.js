@@ -56,6 +56,7 @@ const style = {
   },
   main: {
     p: 3,
+    width: '100%',
   },
   footer: {
     paddingBottom: '3vh',
