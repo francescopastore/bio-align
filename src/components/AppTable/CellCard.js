@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Paper from '@mui/material/Paper'
 
-export default function AppTableCard(props) {
+export default function CellCard(props) {
   style.paper.backgroundColor = props.backgroundColor
   return <Paper sx={style.paper}>{props.children}</Paper>
 }

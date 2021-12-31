@@ -2,7 +2,7 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import renderer from 'react-test-renderer'
 
-import AppTableCard from './AppTableCard'
+import CellCard from './CellCard'
 
 const backgroundColor = '#AAAAAA'
 const children = <div>TEST</div>
@@ -10,10 +10,10 @@ const children = <div>TEST</div>
 it('renders correctly', () => {
   const tree = renderer
     .create(
-      <AppTableCard
+      <CellCard
         backgroundColor={backgroundColor}
         children={children}
-      ></AppTableCard>
+      ></CellCard>
     )
     .toJSON()
   expect(tree).toMatchSnapshot()
@@ -21,10 +21,7 @@ it('renders correctly', () => {
 
 test('children rendering', () => {
   render(
-    <AppTableCard
-      backgroundColor={backgroundColor}
-      children={children}
-    ></AppTableCard>
+    <CellCard backgroundColor={backgroundColor} children={children}></CellCard>
   )
 
   const div = screen.getByText('TEST')

@@ -4,9 +4,9 @@ import IconButton from '@mui/material/IconButton'
 import Box from '@mui/material/Box'
 import CachedIcon from '@mui/icons-material/Cached'
 
-import AppTableLetter from './AppTable/AppTableLetter'
-import AppTableNumber from './AppTable/AppTableNumber'
-import AppTableCard from './AppTable/AppTableCard'
+import CellLetter from './AppTable/CellLetter'
+import CellNumber from './AppTable/CellNumber'
+import CellCard from './AppTable/CellCard'
 
 import { setFirstString, setSecondString } from '../store/app'
 
@@ -38,7 +38,7 @@ function generateTable(form, solution) {
     for (let j = 0; j < solution[i].length; j++) {
       tableRow.push(
         <Box key={j}>
-          <AppTableNumber cell={solution[i][j]}></AppTableNumber>
+          <CellNumber cell={solution[i][j]}></CellNumber>
         </Box>
       )
     }
@@ -75,7 +75,7 @@ function generateHeaderCell(letter, key, isHidden) {
   }
   return (
     <Box key={key} sx={sx}>
-      <AppTableLetter letter={letter}></AppTableLetter>
+      <CellLetter letter={letter}></CellLetter>
     </Box>
   )
 }
@@ -83,7 +83,7 @@ function generateHeaderCell(letter, key, isHidden) {
 function switchButton(form, dispatch) {
   return (
     <Box key="switchButton">
-      <AppTableCard backgroundColor={amber['A200']}>
+      <CellCard backgroundColor={amber['A200']}>
         <IconButton
           data-testid="shuffle-button"
           onClick={() => {
@@ -95,7 +95,7 @@ function switchButton(form, dispatch) {
         >
           <CachedIcon></CachedIcon>
         </IconButton>
-      </AppTableCard>
+      </CellCard>
     </Box>
   )
 }

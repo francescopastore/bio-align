@@ -7,7 +7,7 @@ import InputAdornment from '@mui/material/InputAdornment'
 
 import FunctionsIcon from '@mui/icons-material/Functions'
 
-export default function FormSelectAlgorithm(props) {
+export default function SelectAlgorithm(props) {
   const [algorithm, setAlgorithm] = React.useState(props.default)
 
   const handle = (event) => {

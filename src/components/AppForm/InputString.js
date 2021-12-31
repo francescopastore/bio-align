@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton'
 import EditIcon from '@mui/icons-material/Edit'
 import ShuffleIcon from '@mui/icons-material/Shuffle'
 
-export default function FormInputString(props) {
+export default function InputString(props) {
   const maxLength = 8
   const [value, setValue] = React.useState(props.default)
 

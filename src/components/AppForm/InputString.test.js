@@ -2,7 +2,7 @@ import React from 'react'
 import { render, fireEvent, screen } from '@testing-library/react'
 import renderer from 'react-test-renderer'
 
-import FormInputString from './FormInputString'
+import InputString from './InputString'
 
 const fakeHandle = () => {}
 const fakeLabel = 'test'
@@ -11,11 +11,11 @@ const fakeDefault = 'TEST'
 it('renders correctly', () => {
   const tree = renderer
     .create(
-      <FormInputString
+      <InputString
         default={fakeDefault}
         label={fakeLabel}
         handle={fakeHandle}
-      ></FormInputString>
+      ></InputString>
     )
     .toJSON()
   expect(tree).toMatchSnapshot()
@@ -23,11 +23,11 @@ it('renders correctly', () => {
 
 test('default value param', () => {
   render(
-    <FormInputString
+    <InputString
       default={fakeDefault}
       label={fakeLabel}
       handle={fakeHandle}
-    ></FormInputString>
+    ></InputString>
   )
 
   const input = screen.getByTestId('value-input').querySelector('input')
@@ -37,11 +37,11 @@ test('default value param', () => {
 test('handle change param', () => {
   const newValue = 'TEST TEST'
   render(
-    <FormInputString
+    <InputString
       default={fakeDefault}
       label={fakeLabel}
       handle={fakeHandle}
-    ></FormInputString>
+    ></InputString>
   )
 
   const input = screen.getByTestId('value-input').querySelector('input')
@@ -53,11 +53,11 @@ test('handle change param', () => {
 
 test('shuffle', () => {
   render(
-    <FormInputString
+    <InputString
       default={fakeDefault}
       label={fakeLabel}
       handle={fakeHandle}
-    ></FormInputString>
+    ></InputString>
   )
 
   const button = screen.getByTestId('shuffle-button')

@@ -5,7 +5,7 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import { yellow, grey } from '@mui/material/colors'
 
-import AppTableCard from './AppTableCard'
+import CellCard from './CellCard'
 
 const backgroundCell = grey['A100']
 const backgroundPath = yellow['A200']
@@ -15,7 +15,7 @@ export default function AppTableNumber(props) {
   const fontSize = chooseBestFontSize(cell.value)
   const backgroundColor = cell.isPath ? backgroundPath : backgroundCell
   return (
-    <AppTableCard backgroundColor={backgroundColor}>
+    <CellCard backgroundColor={backgroundColor}>
       <Box sx={style.boxNumber}>
         <ArrowUpwardIcon
           sx={{
@@ -32,7 +32,7 @@ export default function AppTableNumber(props) {
         ></ArrowBackIcon>
         <Typography sx={{ fontSize, ...style.number }}>{cell.value}</Typography>
       </Box>
-    </AppTableCard>
+    </CellCard>
   )
 }
 

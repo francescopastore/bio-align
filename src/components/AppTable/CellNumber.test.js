@@ -2,7 +2,7 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import renderer from 'react-test-renderer'
 
-import AppTableNumber from './AppTableNumber'
+import CellNumber from './CellNumber'
 
 const fakeCell = {
   value: 1,
@@ -13,13 +13,13 @@ const fakeCell = {
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<AppTableNumber cell={fakeCell}></AppTableNumber>)
+    .create(<CellNumber cell={fakeCell}></CellNumber>)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 it('should render the letter given', () => {
-  render(<AppTableNumber cell={fakeCell}></AppTableNumber>)
+  render(<CellNumber cell={fakeCell}></CellNumber>)
 
   const div = screen.getByText(fakeCell.value)
   expect(div).toHaveTextContent(fakeCell.value)

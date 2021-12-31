@@ -2,7 +2,7 @@ import React from 'react'
 import { render, fireEvent, screen } from '@testing-library/react'
 import renderer from 'react-test-renderer'
 
-import FormInputNumber from './FormInputNumber'
+import InputNumber from './InputNumber'
 
 const fakeHandle = () => {}
 const fakeLabel = 'test'
@@ -11,11 +11,11 @@ const fakeDefault = 'TEST'
 it('renders correctly', () => {
   const tree = renderer
     .create(
-      <FormInputNumber
+      <InputNumber
         default={fakeDefault}
         label={fakeLabel}
         handle={fakeHandle}
-      ></FormInputNumber>
+      ></InputNumber>
     )
     .toJSON()
   expect(tree).toMatchSnapshot()
@@ -23,11 +23,11 @@ it('renders correctly', () => {
 
 test('default value param', () => {
   render(
-    <FormInputNumber
+    <InputNumber
       default={fakeDefault}
       label={fakeLabel}
       handle={fakeHandle}
-    ></FormInputNumber>
+    ></InputNumber>
   )
 
   const input = screen.getByTestId('value-input').querySelector('input')
@@ -37,11 +37,11 @@ test('default value param', () => {
 test('handle change param', () => {
   const newValue = '2'
   render(
-    <FormInputNumber
+    <InputNumber
       default={fakeDefault}
       label={fakeLabel}
       handle={fakeHandle}
-    ></FormInputNumber>
+    ></InputNumber>
   )
 
   const input = screen.getByTestId('value-input').querySelector('input')

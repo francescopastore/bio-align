@@ -4,7 +4,7 @@ import FormControl from '@mui/material/FormControl'
 import InputAdornment from '@mui/material/InputAdornment'
 import LooksOneIcon from '@mui/icons-material/LooksOne'
 
-export default function FormInputNumber(props) {
+export default function InputNumber(props) {
   const [value, setValue] = React.useState(props.default)
 
   React.useEffect(() => {

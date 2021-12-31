@@ -2,7 +2,7 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import renderer from 'react-test-renderer'
 
-import FormSelectAlgorithm from './FormSelectAlgorithm'
+import SelectAlgorithm from './SelectAlgorithm'
 
 const fakeHandle = () => {}
 const fakeOptions = [
@@ -15,11 +15,11 @@ const fakeDefault = '0'
 it('renders correctly', () => {
   const tree = renderer
     .create(
-      <FormSelectAlgorithm
+      <SelectAlgorithm
         default={fakeDefault}
         options={fakeOptions}
         handle={fakeHandle}
-      ></FormSelectAlgorithm>
+      ></SelectAlgorithm>
     )
     .toJSON()
   expect(tree).toMatchSnapshot()
@@ -27,11 +27,11 @@ it('renders correctly', () => {
 
 test('default value param', () => {
   render(
-    <FormSelectAlgorithm
+    <SelectAlgorithm
       default={fakeDefault}
       options={fakeOptions}
       handle={fakeHandle}
-    ></FormSelectAlgorithm>
+    ></SelectAlgorithm>
   )
 
   const input = screen.getByTestId('value-input').querySelector('input')
