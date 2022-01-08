@@ -46,10 +46,12 @@ const style = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    overflow: 'auto',
+    my: 3,
   },
   footer: {
     paddingBottom: '3vh',
-    paddingLeft: '5vw',
-    paddingRight: '5vw',
+    paddingLeft: '2vw',
+    paddingRight: '2vw',
   },
 }

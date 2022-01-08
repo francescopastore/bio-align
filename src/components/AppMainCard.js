@@ -19,6 +19,5 @@ export default function AppMainCard() {
 const style = {
   container: {
     p: 3,
-    width: '100%',
   },
 }
