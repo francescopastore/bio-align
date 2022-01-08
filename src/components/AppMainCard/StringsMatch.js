@@ -1,7 +1,7 @@
 import * as React from 'react'
-import Paper from '@mui/material/Paper'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
+
 import { useSelector } from 'react-redux'
 
 import { red, green, amber } from '@mui/material/colors'
@@ -10,47 +10,25 @@ const colorMismatch = red['A700']
 const colorMatch = green['A700']
 const colorGap = amber['A700']
 
-export default function AppStringsMatch() {
+export default function StringsMatch() {
   const data = useSelector((state) => state.app.stringsMatch)
-  const firstString = []
-  const secondString = []
-  for (let i = 0; i < data.firstString.length; i++) {
-    if (data.firstString[i] === data.secondString[i]) {
-      const letter = generateLetter(data.firstString[i], colorMatch, i)
-      firstString.push(letter)
-      secondString.push(letter)
-    } else if (data.firstString[i] === '-') {
-      const letter = generateLetter(data.secondString[i], colorGap, i)
-      const letterGap = generateLetter('-', colorGap, i)
-      firstString.push(letterGap)
-      secondString.push(letter)
-    } else if (data.secondString[i] === '-') {
-      const letter = generateLetter(data.firstString[i], colorGap, i)
-      const letterGap = generateLetter('-', colorGap, i)
-      firstString.push(letter)
-      secondString.push(letterGap)
-    } else {
-      firstString.push(generateLetter(data.firstString[i], colorMismatch, i))
-      secondString.push(generateLetter(data.secondString[i], colorMismatch, i))
-    }
-  }
+
+  const { firstString, secondString } = generateStrings(data)
 
   return (
-    <Paper sx={style.container} elevation={4}>
-      <Grid container spacing={0}>
-        <Grid container item spacing={0} xs={10}>
-          <Grid container item spacing={0} sx={style.centered}>
-            {firstString}
-          </Grid>
-          <Grid container item spacing={0} sx={style.centered}>
-            {secondString}
-          </Grid>
+    <Grid container spacing={0} sx={style.container}>
+      <Grid container item spacing={0} xs={10}>
+        <Grid container item spacing={0} sx={style.centered}>
+          {firstString}
         </Grid>
-        <Grid item sx={style.centered} xs={2}>
-          <Typography sx={style.score}>{data.score}</Typography>
+        <Grid container item spacing={0} sx={style.centered}>
+          {secondString}
         </Grid>
       </Grid>
-    </Paper>
+      <Grid item sx={style.centered} xs={2}>
+        <Typography sx={style.score}>{data.score}</Typography>
+      </Grid>
+    </Grid>
   )
 }
 
@@ -62,6 +40,37 @@ function generateLetter(letter, color, index) {
       </Typography>
     </Grid>
   )
+}
+
+function generateStrings(data) {
+  const firstString = []
+  const secondString = []
+
+  for (let i = 0; i < data.firstString.length; i++) {
+    if (data.firstString[i] === data.secondString[i]) {
+      // same char, it's a match
+      const letter = generateLetter(data.firstString[i], colorMatch, i)
+      firstString.push(letter)
+      secondString.push(letter)
+    } else if (data.firstString[i] === '-') {
+      // first char is a gap
+      const letter = generateLetter(data.secondString[i], colorGap, i)
+      const letterGap = generateLetter('-', colorGap, i)
+      firstString.push(letterGap)
+      secondString.push(letter)
+    } else if (data.secondString[i] === '-') {
+      // second char is a gap
+      const letter = generateLetter(data.firstString[i], colorGap, i)
+      const letterGap = generateLetter('-', colorGap, i)
+      firstString.push(letter)
+      secondString.push(letterGap)
+    } else {
+      // different chars, so it's a mismatch
+      firstString.push(generateLetter(data.firstString[i], colorMismatch, i))
+      secondString.push(generateLetter(data.secondString[i], colorMismatch, i))
+    }
+  }
+  return { firstString, secondString }
 }
 
 const style = {

@@ -3,10 +3,9 @@ import React from 'react'
 import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box'
 
-import AppForm from './components/AppForm.js'
-import AppTable from './components/AppTable.js'
-import AppFooter from './components/AppFooter.js'
-import AppStringsMatch from './components/AppStringsMatch.js'
+import AppTable from './components/AppTable'
+import AppFooter from './components/AppFooter'
+import AppMainCard from './components/AppMainCard'
 
 import { useTheme } from '@mui/material/styles'
 
@@ -17,8 +16,7 @@ export default function App() {
       <Grid container spacing={2} sx={style.container}>
         <Grid item sx={offset(theme)} lg></Grid>
         <Grid item xs={12} md={4} lg={3} sx={style.centered}>
-          <AppForm></AppForm>
-          <AppStringsMatch></AppStringsMatch>
+          <AppMainCard></AppMainCard>
         </Grid>
         <Grid item sx={offset(theme)} lg></Grid>
         <Grid item xs={12} md={8} lg={6} sx={style.centered}>

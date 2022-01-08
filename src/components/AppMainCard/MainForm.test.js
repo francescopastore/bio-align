@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer'
 import { Provider } from 'react-redux'
 
 import { store } from '../store'
-import AppForm from './AppForm'
+import AppForm from './MainForm'
 
 it('renders correctly', () => {
   const tree = renderer
