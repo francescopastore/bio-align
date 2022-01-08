@@ -1,9 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import HeaderMain from './HeaderMain'
+import MainHeader from './MainHeader'
 
 it('renders correctly', () => {
-  const tree = renderer.create(<HeaderMain></HeaderMain>).toJSON()
+  const tree = renderer.create(<MainHeader></MainHeader>).toJSON()
   expect(tree).toMatchSnapshot()
 })

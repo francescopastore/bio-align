@@ -100,7 +100,7 @@ test('tracebackToZero', () => {
       ],
       expected: [
         [{ value: 0 }, { value: 0 }, { value: 0 }],
-        [{ value: 0, isPath: true }, { value: 0 }, { value: 0 }],
+        [{ value: 0 }, { value: 0 }, { value: 0 }],
         [
           { value: 0 },
           { value: 1, diag: true, isPath: true },

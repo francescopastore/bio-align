@@ -21,6 +21,7 @@ export default function stringsMatch(form, solution) {
   while (row > 0 && col > 0 && solution[row][col].isPath) {
     const curr = solution[row][col]
     if (curr.diag || (row === 0 && col === 0) || (!curr.left && !curr.top)) {
+      // diag is true, checks for special cases that are considered valid
       stringsMatch.firstString = firstString[row] + stringsMatch.firstString
       stringsMatch.secondString = secondString[col] + stringsMatch.secondString
       row--
@@ -37,12 +38,14 @@ export default function stringsMatch(form, solution) {
   }
 
   while (row > 0 && solution[row][col].isPath) {
+    // go on until zero
     stringsMatch.firstString = firstString[row] + stringsMatch.firstString
     stringsMatch.secondString = '-' + stringsMatch.secondString
     row--
   }
 
   while (col > 0 && solution[row][col].isPath) {
+    // go on until zero
     stringsMatch.firstString = '-' + stringsMatch.firstString
     stringsMatch.secondString = secondString[col] + stringsMatch.secondString
     col--

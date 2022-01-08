@@ -20,7 +20,7 @@ const tests = [
       ],
       [
         { value: 0 },
-        { value: 0, left: false, top: false, diag: false, isPath: true },
+        { value: 0, left: false, top: false, diag: false },
         { value: 1, left: false, top: false, diag: true },
         { value: 0, left: false, top: false, diag: false },
         { value: 0, left: false, top: false, diag: false },
