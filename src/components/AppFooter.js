@@ -4,8 +4,11 @@ import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
 import Link from '@mui/material/Link'
+import Tooltip from '@mui/material/Tooltip'
+import IconButton from '@mui/material/IconButton'
 
 import GitHubIcon from '@mui/icons-material/GitHub'
+import ErrorIcon from '@mui/icons-material/Error'
 
 const muiLink = (
   <Link underline="none" target="_blank" href="https://mui.com">
@@ -31,20 +34,36 @@ export default function AppFooter() {
     <Paper elevation={4}>
       <Grid container sx={style.container}>
         <Grid item lg={4} xs={0}></Grid>
-        <Grid item lg={4} xs={11} sx={style.center}>
+        <Grid item lg={4} xs={10} sx={style.center}>
           <Typography sx={style.text}>
             Made with {heart} using {reactLink} and {muiLink}
           </Typography>
         </Grid>
-        <Grid item lg={4} xs={1} sx={style.right}>
-          <GitHubIcon sx={style.icon} fontSize="large" onClick={openGithub} />
+        <Grid item lg={4} xs={2} sx={style.right}>
+          <Tooltip title="Report a bug">
+            <IconButton onClick={openReportLink}>
+              <ErrorIcon />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Source code">
+            <IconButton onClick={openGithubLink}>
+              <GitHubIcon />
+            </IconButton>
+          </Tooltip>
         </Grid>
       </Grid>
     </Paper>
   )
 }
 
-function openGithub() {
+function openReportLink(link) {
+  window.open(
+    'https://github.com/francescopastore/bio-align/issues/new',
+    '_blank'
+  )
+}
+
+function openGithubLink(link) {
   window.open('https://github.com/francescopastore/bio-align', '_blank')
 }
 
@@ -56,6 +75,7 @@ const style = {
   icon: {
     cursor: 'pointer',
     height: '100%',
+    ml: 2,
   },
   center: {
     textAlign: 'center',
