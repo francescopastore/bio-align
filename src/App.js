@@ -2,9 +2,7 @@ import React from 'react'
 
 import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box'
-import Paper from '@mui/material/Paper'
 
-import AppHeader from './components/AppHeader.js'
 import AppForm from './components/AppForm.js'
 import AppTable from './components/AppTable.js'
 import AppFooter from './components/AppFooter.js'
@@ -19,10 +17,7 @@ export default function App() {
       <Grid container spacing={2} sx={style.container}>
         <Grid item sx={offset(theme)} lg></Grid>
         <Grid item xs={12} md={4} lg={3} sx={style.centered}>
-          <Paper sx={style.main} elevation={4}>
-            <AppHeader></AppHeader>
-            <AppForm></AppForm>
-          </Paper>
+          <AppForm></AppForm>
           <AppStringsMatch></AppStringsMatch>
         </Grid>
         <Grid item sx={offset(theme)} lg></Grid>
@@ -53,10 +48,6 @@ const style = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  main: {
-    p: 3,
-    width: '100%',
   },
   footer: {
     paddingBottom: '3vh',

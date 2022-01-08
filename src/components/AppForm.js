@@ -2,8 +2,10 @@ import * as React from 'react'
 
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import Paper from '@mui/material/Paper'
 
 import SelectAlgorithm from './AppForm/SelectAlgorithm'
+import HeaderMain from './AppForm/HeaderMain'
 import InputString from './AppForm/InputString'
 import InputNumber from './AppForm/InputNumber'
 
@@ -25,7 +27,8 @@ export default function AppForm() {
   // change here default values
   const data = useSelector((state) => state.app.form)
   return (
-    <>
+    <Paper sx={style.container} elevation={4}>
+      <HeaderMain></HeaderMain>
       <SelectAlgorithm
         options={logic.algorithms}
         default={0}
@@ -66,6 +69,13 @@ export default function AppForm() {
       <Typography variant="caption">
         Only weights between -10 and 10 are allowed
       </Typography>
-    </>
+    </Paper>
   )
+}
+
+const style = {
+  container: {
+    p: 3,
+    width: '100%',
+  },
 }
