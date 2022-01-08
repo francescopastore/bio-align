@@ -1,4 +1,6 @@
-# BioAlgo
+# BioAlign
+
+![logo](./public/header.png)
 
 [![Deployment](https://github.com/francescopastore/bio-align/actions/workflows/deploy.yml/badge.svg)](https://github.com/francescopastore/bio-align/actions/workflows/deploy.yml)
 
@@ -10,10 +12,6 @@ A web app for string alignment algorithms used in bioinformatics courses
 - [Needleman–Wunsch](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
 - [Longest Common Subsequence](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem)
 - [Smith–Waterman algorithm](https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm)
-
-## Why this project?
-
-WIP
 
 ## Development
 
@@ -29,4 +27,4 @@ To add a new algorithm:
 
 - check if everything works fine!
 
-Feel free to do some PRs for bugfixes or new functionalities. Thanks in advance!
+Feel free to do PRs for bugfixes or new functionalities. Thanks in advance!
