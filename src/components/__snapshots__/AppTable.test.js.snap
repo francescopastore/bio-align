@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="MuiBox-root css-1hr54s6"
+  className="MuiBox-root css-1v8x7dw"
 >
   <div
-    className="MuiBox-root css-k008qs"
+    className="MuiBox-root css-iypsb0"
   >
     <div
       className="MuiBox-root css-0"
@@ -153,7 +153,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="MuiBox-root css-k008qs"
+    className="MuiBox-root css-iypsb0"
   >
     <div
       className="MuiBox-root css-0"
@@ -570,7 +570,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="MuiBox-root css-k008qs"
+    className="MuiBox-root css-iypsb0"
   >
     <div
       className="MuiBox-root css-0"
@@ -987,7 +987,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="MuiBox-root css-k008qs"
+    className="MuiBox-root css-iypsb0"
   >
     <div
       className="MuiBox-root css-0"
@@ -1404,7 +1404,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="MuiBox-root css-k008qs"
+    className="MuiBox-root css-iypsb0"
   >
     <div
       className="MuiBox-root css-0"
@@ -1821,7 +1821,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="MuiBox-root css-k008qs"
+    className="MuiBox-root css-iypsb0"
   >
     <div
       className="MuiBox-root css-0"
@@ -2238,7 +2238,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="MuiBox-root css-k008qs"
+    className="MuiBox-root css-iypsb0"
   >
     <div
       className="MuiBox-root css-0"
@@ -2655,7 +2655,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="MuiBox-root css-k008qs"
+    className="MuiBox-root css-iypsb0"
   >
     <div
       className="MuiBox-root css-0"
@@ -3072,7 +3072,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="MuiBox-root css-k008qs"
+    className="MuiBox-root css-iypsb0"
   >
     <div
       className="MuiBox-root css-0"

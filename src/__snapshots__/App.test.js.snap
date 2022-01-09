@@ -3,16 +3,13 @@
 exports[`renders correctly 1`] = `
 Array [
   <div
-    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1h754gw-MuiGrid-root"
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1l5lc3i-MuiGrid-root"
   >
     <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-true css-ht86zf-MuiGrid-root"
-    />
-    <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-1tbgsg4-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-5 css-6t9ts9-MuiGrid-root"
     >
       <div
-        className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-1rnkv3u-MuiPaper-root"
+        className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-e3g9ak-MuiPaper-root"
       >
         <div
           className="MuiBox-root css-co4xce"
@@ -696,16 +693,13 @@ Array [
       </div>
     </div>
     <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-true css-ht86zf-MuiGrid-root"
-    />
-    <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 MuiGrid-grid-lg-6 css-cutidf-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-7 css-12uiqxc-MuiGrid-root"
     >
       <div
-        className="MuiBox-root css-1hr54s6"
+        className="MuiBox-root css-1v8x7dw"
       >
         <div
-          className="MuiBox-root css-k008qs"
+          className="MuiBox-root css-iypsb0"
         >
           <div
             className="MuiBox-root css-0"
@@ -856,7 +850,7 @@ Array [
           </div>
         </div>
         <div
-          className="MuiBox-root css-k008qs"
+          className="MuiBox-root css-iypsb0"
         >
           <div
             className="MuiBox-root css-0"
@@ -1273,7 +1267,7 @@ Array [
           </div>
         </div>
         <div
-          className="MuiBox-root css-k008qs"
+          className="MuiBox-root css-iypsb0"
         >
           <div
             className="MuiBox-root css-0"
@@ -1690,7 +1684,7 @@ Array [
           </div>
         </div>
         <div
-          className="MuiBox-root css-k008qs"
+          className="MuiBox-root css-iypsb0"
         >
           <div
             className="MuiBox-root css-0"
@@ -2107,7 +2101,7 @@ Array [
           </div>
         </div>
         <div
-          className="MuiBox-root css-k008qs"
+          className="MuiBox-root css-iypsb0"
         >
           <div
             className="MuiBox-root css-0"
@@ -2524,7 +2518,7 @@ Array [
           </div>
         </div>
         <div
-          className="MuiBox-root css-k008qs"
+          className="MuiBox-root css-iypsb0"
         >
           <div
             className="MuiBox-root css-0"
@@ -2941,7 +2935,7 @@ Array [
           </div>
         </div>
         <div
-          className="MuiBox-root css-k008qs"
+          className="MuiBox-root css-iypsb0"
         >
           <div
             className="MuiBox-root css-0"
@@ -3358,7 +3352,7 @@ Array [
           </div>
         </div>
         <div
-          className="MuiBox-root css-k008qs"
+          className="MuiBox-root css-iypsb0"
         >
           <div
             className="MuiBox-root css-0"
@@ -3775,7 +3769,7 @@ Array [
           </div>
         </div>
         <div
-          className="MuiBox-root css-k008qs"
+          className="MuiBox-root css-iypsb0"
         >
           <div
             className="MuiBox-root css-0"
@@ -4193,9 +4187,6 @@ Array [
         </div>
       </div>
     </div>
-    <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-true css-ht86zf-MuiGrid-root"
-    />
   </div>,
   <div
     className="MuiBox-root css-1dpgvbl"
@@ -4210,7 +4201,7 @@ Array [
           className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-0 MuiGrid-grid-lg-4 css-gi2auw-MuiGrid-root"
         />
         <div
-          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 MuiGrid-grid-lg-4 css-1d0fg97-MuiGrid-root"
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-gwco51-MuiGrid-root"
         >
           <p
             className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
@@ -4246,7 +4237,7 @@ Array [
           </p>
         </div>
         <div
-          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-lg-4 css-16ah8ck-MuiGrid-root"
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 css-1nal30c-MuiGrid-root"
         >
           <button
             aria-label="Report a bug"

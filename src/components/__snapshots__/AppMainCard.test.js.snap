@@ -1,0 +1,681 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 css-e3g9ak-MuiPaper-root"
+>
+  <div
+    className="MuiBox-root css-co4xce"
+  >
+    <img
+      alt="header"
+      src="/header.png"
+    />
+  </div>
+  <div
+    className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-1iledgx-MuiFormControl-root"
+  >
+    <label
+      className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink={true}
+      id="algorithm-label"
+    >
+      Algorithm
+    </label>
+    <div
+      className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiSelect-root css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+      data-testid="value-input"
+      onClick={[Function]}
+    >
+      <div
+        className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+      >
+        <span
+          className="notranslate"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="FunctionsIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 4H6v2l6.5 6L6 18v2h12v-3h-7l5-5-5-5h7z"
+          />
+        </svg>
+      </div>
+      <div
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-labelledby="algorithm-label algorithm"
+        className="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart css-bf1e45-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+        id="algorithm"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        Levenshtein distance
+      </div>
+      <input
+        aria-hidden={true}
+        className="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+        disabled={false}
+        onAnimationStart={[Function]}
+        onChange={[Function]}
+        required={false}
+        tabIndex={-1}
+        value={0}
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+        data-testid="ArrowDropDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+      <fieldset
+        aria-hidden={true}
+        className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="css-1z7n62"
+        >
+          <span>
+            Algorithm
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-1iledgx-MuiFormControl-root"
+  >
+    <div
+      className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+      data-testid="value-input"
+    >
+      <label
+        className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+        data-shrink={true}
+      >
+        First string
+      </label>
+      <div
+        className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+        >
+          <span
+            className="notranslate"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "&#8203;",
+              }
+            }
+          />
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="EditIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+            />
+          </svg>
+        </div>
+        <input
+          aria-invalid={false}
+          autoFocus={false}
+          className="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-152mnda-MuiInputBase-input-MuiOutlinedInput-input"
+          disabled={false}
+          onAnimationStart={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          required={false}
+          type="text"
+          value="ATTACTC"
+        />
+        <div
+          className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+            data-testid="shuffle-button"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ShuffleIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10.59 9.17 5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
+              />
+            </svg>
+          </button>
+        </div>
+        <fieldset
+          aria-hidden={true}
+          className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            className="css-1z7n62"
+          >
+            <span>
+              First string
+            </span>
+          </legend>
+        </fieldset>
+      </div>
+      
+    </div>
+  </div>
+  <div
+    className="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-1iledgx-MuiFormControl-root"
+  >
+    <div
+      className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+      data-testid="value-input"
+    >
+      <label
+        className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+        data-shrink={true}
+      >
+        Second string
+      </label>
+      <div
+        className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+        >
+          <span
+            className="notranslate"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "&#8203;",
+              }
+            }
+          />
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="EditIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+            />
+          </svg>
+        </div>
+        <input
+          aria-invalid={false}
+          autoFocus={false}
+          className="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-152mnda-MuiInputBase-input-MuiOutlinedInput-input"
+          disabled={false}
+          onAnimationStart={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          required={false}
+          type="text"
+          value="ATATGTC"
+        />
+        <div
+          className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+            data-testid="shuffle-button"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="ShuffleIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10.59 9.17 5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
+              />
+            </svg>
+          </button>
+        </div>
+        <fieldset
+          aria-hidden={true}
+          className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            className="css-1z7n62"
+          >
+            <span>
+              Second string
+            </span>
+          </legend>
+        </fieldset>
+      </div>
+      
+    </div>
+  </div>
+  <div
+    className="MuiBox-root css-1bnxa12"
+  >
+    <div
+      className="MuiFormControl-root MuiFormControl-marginNormal css-1n47m0m-MuiFormControl-root"
+    >
+      <div
+        className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+        data-testid="value-input"
+      >
+        <label
+          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-disabled MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink={true}
+        >
+          Match
+        </label>
+        <div
+          className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-disabled MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+          onClick={[Function]}
+        >
+          <div
+            className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+          >
+            <span
+              className="notranslate"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "&#8203;",
+                }
+              }
+            />
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="LooksOneIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2V9h-2V7h4v10z"
+              />
+            </svg>
+          </div>
+          <input
+            aria-invalid={false}
+            autoFocus={false}
+            className="MuiOutlinedInput-input MuiInputBase-input Mui-disabled MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+            disabled={true}
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
+            type="text"
+            value={0}
+          />
+          <fieldset
+            aria-hidden={true}
+            className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              className="css-1z7n62"
+            >
+              <span>
+                Match
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      className="MuiFormControl-root MuiFormControl-marginNormal css-1n47m0m-MuiFormControl-root"
+    >
+      <div
+        className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+        data-testid="value-input"
+      >
+        <label
+          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-disabled MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink={true}
+        >
+          Mismatch
+        </label>
+        <div
+          className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-disabled MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+          onClick={[Function]}
+        >
+          <div
+            className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+          >
+            <span
+              className="notranslate"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "&#8203;",
+                }
+              }
+            />
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="LooksOneIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2V9h-2V7h4v10z"
+              />
+            </svg>
+          </div>
+          <input
+            aria-invalid={false}
+            autoFocus={false}
+            className="MuiOutlinedInput-input MuiInputBase-input Mui-disabled MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+            disabled={true}
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
+            type="text"
+            value={1}
+          />
+          <fieldset
+            aria-hidden={true}
+            className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              className="css-1z7n62"
+            >
+              <span>
+                Mismatch
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      className="MuiFormControl-root MuiFormControl-marginNormal css-ufpu9p-MuiFormControl-root"
+    >
+      <div
+        className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+        data-testid="value-input"
+      >
+        <label
+          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-disabled MuiFormLabel-filled css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink={true}
+        >
+          Gap
+        </label>
+        <div
+          className="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-disabled MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+          onClick={[Function]}
+        >
+          <div
+            className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+          >
+            <span
+              className="notranslate"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "&#8203;",
+                }
+              }
+            />
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="LooksOneIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2V9h-2V7h4v10z"
+              />
+            </svg>
+          </div>
+          <input
+            aria-invalid={false}
+            autoFocus={false}
+            className="MuiOutlinedInput-input MuiInputBase-input Mui-disabled MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+            disabled={true}
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
+            type="text"
+            value={1}
+          />
+          <fieldset
+            aria-hidden={true}
+            className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              className="css-1z7n62"
+            >
+              <span>
+                Gap
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <span
+    className="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+  >
+    Only weights between -10 and 10 are allowed
+  </span>
+  <div
+    className="MuiGrid-root MuiGrid-container css-lwac74-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-10 css-3m202l-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-container MuiGrid-item css-12de19t-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-1hv58t6-MuiTypography-root"
+          >
+            A
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-1hv58t6-MuiTypography-root"
+          >
+            T
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-t2gjy9-MuiTypography-root"
+          >
+            T
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-t2gjy9-MuiTypography-root"
+          >
+            A
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-t2gjy9-MuiTypography-root"
+          >
+            C
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-1hv58t6-MuiTypography-root"
+          >
+            T
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-1hv58t6-MuiTypography-root"
+          >
+            C
+          </p>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-container MuiGrid-item css-12de19t-MuiGrid-root"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-1hv58t6-MuiTypography-root"
+          >
+            A
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-1hv58t6-MuiTypography-root"
+          >
+            T
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-t2gjy9-MuiTypography-root"
+          >
+            A
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-t2gjy9-MuiTypography-root"
+          >
+            T
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-t2gjy9-MuiTypography-root"
+          >
+            G
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-1hv58t6-MuiTypography-root"
+          >
+            T
+          </p>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-1hv58t6-MuiTypography-root"
+          >
+            C
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1w3zebo-MuiGrid-root"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 css-xi9suw-MuiTypography-root"
+      >
+        3
+      </p>
+    </div>
+  </div>
+</div>
+`;
