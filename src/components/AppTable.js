@@ -103,9 +103,10 @@ function switchButton(form, dispatch) {
 const style = {
   container: {
     overflow: 'auto',
-    my: 3,
   },
   row: {
     display: 'flex',
+    width: 'fit-content',
+    margin: 'auto',
   },
 }
