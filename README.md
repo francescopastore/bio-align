@@ -1,12 +1,12 @@
 # BioAlign
 
-![logo](./public/header.png)
-
 [![Deployment](https://github.com/francescopastore/bio-align/actions/workflows/deploy.yml/badge.svg)](https://github.com/francescopastore/bio-align/actions/workflows/deploy.yml)
+
+![logo](./public/header.png)
 
 A web app for string alignment algorithms used in bioinformatics courses
 
-## Supported algorithm
+## Supported algorithms
 
 - [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance)
 - [Needleman–Wunsch](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
