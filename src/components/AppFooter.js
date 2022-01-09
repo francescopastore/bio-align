@@ -34,12 +34,12 @@ export default function AppFooter() {
     <Paper elevation={4}>
       <Grid container sx={style.container}>
         <Grid item lg={4} xs={0}></Grid>
-        <Grid item lg={4} xs={10} sx={style.center}>
+        <Grid item lg={4} xs={12} sx={style.center}>
           <Typography sx={style.text}>
             Made with {heart} using {reactLink} and {muiLink}
           </Typography>
         </Grid>
-        <Grid item lg={4} xs={2} sx={style.right}>
+        <Grid item lg={4} xs={12} sx={rightStyle}>
           <Tooltip title="Report a bug">
             <IconButton onClick={openReportLink}>
               <ErrorIcon />
@@ -67,6 +67,16 @@ function openGithubLink(link) {
   window.open('https://github.com/francescopastore/bio-align', '_blank')
 }
 
+const rightStyle = (theme) => ({
+  [theme.breakpoints.down('lg')]: {
+    textAlign: 'center',
+    mt: 3,
+  },
+  [theme.breakpoints.up('lg')]: {
+    textAlign: 'right',
+  },
+})
+
 const style = {
   container: {
     p: 4,
@@ -79,8 +89,5 @@ const style = {
   },
   center: {
     textAlign: 'center',
-  },
-  right: {
-    textAlign: 'right',
   },
 }
