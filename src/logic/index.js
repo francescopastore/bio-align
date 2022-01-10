@@ -6,7 +6,7 @@ import lcs from './algorithms/lcs'
 import sw from './algorithms/sw'
 
 // list of algorithm available
-// each algorithm has a label and a calculate function
+// each algorithm has a label, a calculate function and a defaultForm object
 const data = {
   stringsMatch,
   algorithms: [

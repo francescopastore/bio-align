@@ -54,7 +54,11 @@ function initializeWithZero(table, numRows, numCols) {
   return table
 }
 
-// traceback from the given start point only for nw type of algorithms
+/**
+ * traceback from the given start point only for nw type of algorithms
+ * @param {array} table contains the alignment table
+ * @returns the given table with in addition the solution path
+ */
 function traceback(table) {
   let i = table.length - 1
   let j = table[0].length - 1
@@ -73,7 +77,13 @@ function traceback(table) {
   return table
 }
 
-// traceback from the given start point until zero, only for sw type of algorithms
+/**
+ * traceback from the given start point until zero, only for sw type of algorithms
+ * @param {array} table contains the alignment table
+ * @param {Number} row index of start point
+ * @param {Number} col index of start point
+ * @returns the given table with in addition the solution path
+ */
 function tracebackToZero(table, row, col) {
   while (table[row][col].value !== 0 && row !== 0 && col !== 0) {
     table[row][col].isPath = true
