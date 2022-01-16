@@ -15,7 +15,8 @@ export default function MainHeader() {
 
 const style = {
   container: {
-    textAlign: 'center',
+    margin: 'auto',
+    maxWidth: '350px',
     mb: 1,
   },
   banner: {
