@@ -18,7 +18,6 @@ export default function AppMainCard() {
 
 const style = {
   container: {
-    minWidth: '400px',
     maxWidth: '500px',
     margin: 'auto',
     p: 3,
